@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
+
 const GlobalStyle = createGlobalStyle`
   /* Box sizing rules */
 *,
@@ -20,6 +21,10 @@ blockquote,
 dl,
 dd {
   margin: 0;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */

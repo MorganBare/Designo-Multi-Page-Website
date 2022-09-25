@@ -1,8 +1,22 @@
 :root{
+
+    /* colors */
     --peach: #E7816B;
     --black: #1D1C1E;
     --white: #fff;
     --light-peach: #FFAD9B;
     --dark-grey: #333136;
     --light-grey: #F1F3F5;
+
+    /* font weights */
+    --regular: 400;
+    --medium: 500;
+
+    /* font sizes */
+    --h1: 48px;
+    --h2: 40px;
+    --h3: 20px;
+    --body: 16px;
+    --button: 15px;
+
 }
