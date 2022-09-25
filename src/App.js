@@ -1,11 +1,12 @@
-
 import GlobalStyle from './styles/GlobalStyle';
+import { DarkButton, LightButton } from "./styles/Buttons"
 
 function App() {
   return (
     <div className="App">
       <GlobalStyle/>
-      <h1>djfhgjghdfjk</h1>
+      <DarkButton>Learn More</DarkButton>
+      <LightButton>Learn More</LightButton>
     </div>
   );
 }
