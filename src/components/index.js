@@ -1,5 +1,5 @@
 import Navigation from "./Navigation";
-import Footer from "./Footer";
-import Footer2 from "./Footer2";
+import Footer from "./footers/Footer";
+import FooterContact from "./footers/FooterContact";
 
-export { Navigation, Footer, Footer2 };
+export { Navigation, Footer, FooterContact };
