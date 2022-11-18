@@ -17,7 +17,7 @@ export default function Footer() {
 
       <ContactInfoContainer>
         <ContactNav>
-          <img src={lightLogo} alt="logo" />
+          <img src={lightLogo} alt="logo" style={{width: '202px', height: '27px'}} />
           <ul>
             <li>OUR COMPANY</li>
             <li>LOCATIONS</li>

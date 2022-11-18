@@ -7,27 +7,39 @@ export const FooterContainer = styled.div`
 `;
 
 export const GetInTouchContainer = styled.div`
+
+    color: ${({theme}) => theme.colors.white};
     background-image: url('${bgMobile}');
     background-repeat: no-repeat;
     background-position-x: 43%;
-    background-position-y: 45%;
+    background-position-y: 49%;
     background-color: ${({theme}) => theme.colors.peach};
     text-align: center;
     height: 379px;
     width: clamp(327px, 89%, 1111px);
     border-radius: 15px;
+
     margin: auto;
+    padding: 4em 1.5em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
     position: relative;
     bottom: -180px;
 
     h2 {
         font-size: ${({theme}) => theme.fontSize.h2};
-        font-weight: ${({theme}) => theme.fontWeight.medium}
+        font-weight: ${({theme}) => theme.fontWeight.medium};
+        padding: 0 1em .5em 1em;
+        line-height: ${({theme}) => theme.lineHeight.medium};
     }
 
     p {
         font-size: ${({theme}) => theme.fontSize.body};
+        line-height: ${({theme}) => theme.lineHeight.small}
     }
 
     @media only screen and (min-width: 767px) { 

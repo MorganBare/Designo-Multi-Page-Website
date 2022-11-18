@@ -21,5 +21,16 @@ export const theme = {
         h3: '20px',
         body: 'clamp(0.9375rem, 0.925rem + 0.0625vw, 1rem)',
         button: '15px'
+    },
+
+    letterSpacing: {
+        small: '2px',
+        large: '5px'
+    },
+
+    lineHeight: {
+        small: '26px',
+        medium: '36px',
+        large: '48px'
     }
 }
