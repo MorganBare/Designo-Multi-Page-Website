@@ -1,34 +1,38 @@
 import styled from "styled-components";
 
 export const DarkButton = styled.button`
-    color: var(--black);
+    color: ${({theme}) => theme.colors.black};
     text-transform: uppercase;
-    background-color: var(--white);
+    background-color: ${({theme}) => theme.colors.white};
     border: none;
     cursor: pointer;
     border-radius: 8px;
     letter-spacing: 1px;
-    font-weight: var(--medium);
+    font-weight: ${({theme}) => theme.fontWeight.medium};
+    font-size: ${({theme}) => theme.fontSize.button};
+    padding: 17px 18.5px;
 
     &:hover{
-        background-color: var(--light-peach);
-        color: var(--white);
+        background-color: ${({theme}) => theme.colors.lightPeach};
+        color: ${({theme}) => theme.colors.white};
         transition: all .4s ease-in-out;
     }
 `;
 
 export const LightButton = styled.button`
-    color: var(--white);
+    color: ${({theme}) => theme.colors.white};
     text-transform: uppercase;
-    background-color: var(--peach);
+    background-color: ${({theme}) => theme.colors.peach};
     border: none;
     cursor: pointer;
     border-radius: 8px;
     letter-spacing: 1px;
-    font-weight: var(--medium);
+    font-weight: ${({theme}) => theme.fontWeight.medium};
+    font-size: ${({theme}) => theme.fontSize.button};
+    padding: 17px 18.5px;
 
     &:hover{
-        background-color: var(--light-peach);
+        background-color: ${({theme}) => theme.colors.lightPeach};
         transition: all .5s ease-in-out;
     }
 `;
