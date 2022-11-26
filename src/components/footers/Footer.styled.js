@@ -73,6 +73,16 @@ export const GetInTouchContainer = styled.div`
     @media only screen and (min-width: 1024px) { 
         height: 292px;
         background-position-x: 100%;
+        background-position-y: 50%;
+        flex-direction: row;
+        text-align: left;
+        padding: 5.5rem;
+
+        h2 {
+           margin: 0;
+           line-height: ${({theme}) => theme.lineHeight.large};
+        }
+
     }
 
 `;
@@ -90,6 +100,10 @@ export const ContactInfoContainer = styled.div`
         padding-top: 120px;
     }
 
+    @media only screen and (min-width: 1024px) { 
+        padding-top: 100px;
+    }
+
 `;
 
 export const InnerContactContainer = styled.div`
@@ -104,6 +118,11 @@ export const InnerContactContainer = styled.div`
     @media only screen and (min-width: 767px) { 
         padding-bottom: 3rem;
         gap: 2rem;
+    }
+
+    @media only screen and (min-width: 1024px) { 
+        width: 1111px;
+        margin: auto;
     }
 `;
 
@@ -192,6 +211,10 @@ export const AddressOuterContainer = styled.div`
         flex-direction: row;
         gap: 2.5rem;
     }
+
+    @media only screen and (min-width: 1024px) {
+        gap: 11rem;
+    }
 `;
 
 export const SingleContactContainer = styled.div`
@@ -239,6 +262,8 @@ export const FlexDiv = styled.div`
         margin-bottom: 2rem;
     }
 `;
+
+
 
 export const StyledFacebookIcon = styled(facebook)`
 
