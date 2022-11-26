@@ -2,9 +2,7 @@ import styled from "styled-components";
 
 import bgMobile from "../../assets/shared/desktop/bg-pattern-call-to-action.svg"
 
-export const FooterContainer = styled.div`
-
-`;
+export const FooterContainer = styled.div``;
 
 export const GetInTouchContainer = styled.div`
 
@@ -28,7 +26,7 @@ export const GetInTouchContainer = styled.div`
     align-items: center;
 
     position: relative;
-    bottom: -180px;
+    bottom: -190px;
 
     h2 {
         font-size: ${({theme}) => theme.fontSize.h2};
@@ -61,8 +59,74 @@ export const ContactInfoContainer = styled.div`
     font-size: ${({theme}) => theme.fontSize.body};
     width: 100%;
     height: 815px;
+    padding-top: 200px;
+
 `;
 
+export const InnerContactContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding-bottom: 4rem;
+    margin-inline: 2rem;
+`;
+
+export const ContactPageInfoContainer = styled.div`
+    color: white;
+    background-color: black;
+    font-size: ${({theme}) => theme.fontSize.body};
+    width: 100%;
+    height: 626px;
+`;
+
+
 export const ContactNav = styled.nav`
+    padding-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    img {
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        padding-top: 1.5rem;
+        padding-left: 0;
+        width: 100%;
+        border-top: 1px rgba(255,255,255,0.2) solid;
+        margin-bottom: 0;
+
+        li {
+            padding: .5rem;
+        }
+    }
+
+`;
+
+export const AddressOuterContainer = styled.div`
+    color: ${({theme}) => theme.colors.opac};
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+`;
+
+export const SingleContactContainer = styled.div`
+    text-align: center;
+    padding: 1.5rem 0;
+    p:first-of-type {
+        font-weight: ${({theme}) => theme.fontWeight.large};
+        letter-spacing: 1px;
+    }
+`;
+
+export const SocialMediaContainer = styled.div`
+    display: flex;
+    width: 184px;
+    justify-content: space-between;
 `;
 
