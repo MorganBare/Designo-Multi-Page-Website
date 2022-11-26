@@ -85,6 +85,11 @@ export const ContactInfoContainer = styled.div`
     height: 815px;
     padding-top: 200px;
 
+    @media only screen and (min-width: 767px) { 
+        height: 423px;
+        padding-top: 120px;
+    }
+
 `;
 
 export const InnerContactContainer = styled.div`
@@ -95,6 +100,11 @@ export const InnerContactContainer = styled.div`
     height: 100%;
     padding-bottom: 4rem;
     margin-inline: 2rem;
+    
+    @media only screen and (min-width: 767px) { 
+        padding-bottom: 3rem;
+        gap: 2rem;
+    }
 `;
 
 export const ContactPageInfoContainer = styled.div`
@@ -135,6 +145,26 @@ export const ContactNav = styled.nav`
         }
     }
 
+    @media only screen and (min-width: 767px) { 
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px rgba(255,255,255,0.2) solid;
+        padding-bottom: 2rem;
+
+        ul {
+            border-top: none;
+            display: flex;
+            justify-content: space-between;
+            max-width: 370px;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+        margin-bottom: 0;
+        }
+    }
+
 `;
 
 export const Link = styled(NavLink)`
@@ -153,6 +183,11 @@ export const AddressOuterContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media only screen and (min-width: 767px) {
+        flex-direction: row;
+        gap: 2.5rem;
+    }
 `;
 
 export const SingleContactContainer = styled.div`
@@ -162,12 +197,32 @@ export const SingleContactContainer = styled.div`
         font-weight: ${({theme}) => theme.fontWeight.large};
         letter-spacing: 1px;
     }
+
+    @media only screen and (min-width: 767px) {
+        padding: 0;
+        text-align: left;
+        font-weight: ${({theme}) => theme.fontWeight.large};
+        line-height: ${({theme}) => theme.lineHeight.small};
+    }
 `;
 
 export const SocialMediaContainer = styled.div`
     display: flex;
     width: 184px;
     justify-content: space-between;
+    @media only screen and (min-width: 767px) {
+        flex-direction: row;
+    }
+`;
+
+export const FlexDiv = styled.div`
+    @media only screen and (min-width: 767px) {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 2rem;
+    }
 `;
 
 export const StyledFacebookIcon = styled(facebook)`
