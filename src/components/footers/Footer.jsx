@@ -1,8 +1,10 @@
 import React from 'react'
+
 import { FooterContainer, 
         GetInTouchContainer, 
         ContactInfoContainer, 
         ContactNav, 
+        Link,
         AddressOuterContainer, 
         SingleContactContainer, 
         SocialMediaContainer, 
@@ -34,9 +36,9 @@ export default function Footer() {
           <ContactNav>
             <img src={lightLogo} alt="logo" style={{width: '202px', height: '27px'}} />
             <ul>
-              <li>OUR COMPANY</li>
-              <li>LOCATIONS</li>
-              <li>CONTACT</li>
+              <li><Link to="/About">OUR COMPANY</Link></li>
+              <li><Link to="/Locations">LOCATIONS</Link></li>
+              <li><Link to="/Contact">CONTACT</Link></li>
             </ul>
           </ContactNav>
           <AddressOuterContainer>

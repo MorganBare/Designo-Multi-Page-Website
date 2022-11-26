@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { NavLink } from 'react-router-dom'
+
 import bgMobile from "../../assets/shared/desktop/bg-pattern-call-to-action.svg"
 
 export const FooterContainer = styled.div``;
@@ -100,13 +102,29 @@ export const ContactNav = styled.nav`
         width: 100%;
         border-top: 1px rgba(255,255,255,0.2) solid;
         margin-bottom: 0;
+        letter-spacing: ${({theme}) => theme.letterSpacing.small};
 
         li {
             padding: .5rem;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 
 `;
+
+export const Link = styled(NavLink)`
+    text-decoration: none;
+    color: ${({theme}) => theme.colors.white};
+
+    &:hover {
+        color:${({theme}) => theme.colors.peach};
+        transition: color .8s ease-in;
+    }
+
+`
 
 export const AddressOuterContainer = styled.div`
     color: ${({theme}) => theme.colors.opac};
