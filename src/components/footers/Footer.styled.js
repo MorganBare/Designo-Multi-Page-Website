@@ -113,6 +113,10 @@ export const ContactPageInfoContainer = styled.div`
     font-size: ${({theme}) => theme.fontSize.body};
     width: 100%;
     height: 626px;
+
+    @media only screen and (min-width: 767px) { 
+        height: 337px;
+    }
 `;
 
 
@@ -201,8 +205,17 @@ export const SingleContactContainer = styled.div`
     @media only screen and (min-width: 767px) {
         padding: 0;
         text-align: left;
-        font-weight: ${({theme}) => theme.fontWeight.large};
         line-height: ${({theme}) => theme.lineHeight.small};
+        
+        p{
+            font-weight: ${({theme}) => theme.fontWeight.large}
+        }
+    }
+`;
+
+export const SubP = styled.div`
+    @media only screen and (min-width: 767px) {
+        font-weight: 400;
     }
 `;
 
@@ -210,8 +223,10 @@ export const SocialMediaContainer = styled.div`
     display: flex;
     width: 184px;
     justify-content: space-between;
+    padding-top: 1rem;
     @media only screen and (min-width: 767px) {
         flex-direction: row;
+        padding-top: 0;
     }
 `;
 

@@ -14,7 +14,8 @@ import { FooterContainer,
         StyledTwitterIcon,
         StyledPinterestIcon,
         StyledInstagramIcon,
-        FlexDiv
+        FlexDiv,
+        SubP
       } from './Footer.styled'
 
 import lightLogo  from "../../assets/shared/desktop/logo-light.png"
@@ -47,8 +48,8 @@ export default function Footer() {
             <AddressOuterContainer>
               <SingleContactContainer>
                 <p>Designo Central Office</p>
-                <p>3886 Wellington Street</p>
-                <p>Toronto, Ontario M9C 3J5</p>
+                <SubP>3886 Wellington Street</SubP>
+                <SubP>Toronto, Ontario M9C 3J5</SubP>
               </SingleContactContainer>
               <SingleContactContainer>
                 <p>Contact Us (Central Office)</p>
