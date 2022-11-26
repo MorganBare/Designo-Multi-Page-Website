@@ -52,7 +52,22 @@ export const GetInTouchContainer = styled.div`
     @media only screen and (min-width: 767px) { 
         height: 350px;
         bottom: -90px;
-        background-position-x: 10%;
+        background-position-x: 11%;
+        background-position-y: 45%;
+
+        h2 {
+            max-width: 300px;
+            font-size: 40px;
+            margin: auto;
+            padding: 0;
+            line-height: ${({theme}) => theme.lineHeight.medLarge};
+        }
+
+        p {
+            max-width: 430px;
+            padding-top: 1rem;
+            padding-bottom: 1.5rem;
+        }
     }
 
     @media only screen and (min-width: 1024px) { 
@@ -156,8 +171,6 @@ export const SocialMediaContainer = styled.div`
 `;
 
 export const StyledFacebookIcon = styled(facebook)`
-
-    background: url('http://www.facebook.com');
 
     &:hover {
         cursor: pointer;

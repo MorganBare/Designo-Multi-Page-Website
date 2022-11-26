@@ -33,6 +33,7 @@ export const theme = {
     lineHeight: {
         small: '26px',
         medium: '36px',
+        medLarge: '40px',
         large: '48px'
     }
 }
