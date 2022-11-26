@@ -2,6 +2,13 @@ import styled from "styled-components";
 
 import { NavLink } from 'react-router-dom'
 
+
+import { ReactComponent as instagram} from "../../assets/shared/desktop/icon-instagram.svg"
+import { ReactComponent as facebook} from "../../assets/shared/desktop/icon-facebook.svg"
+import { ReactComponent as twitter} from "../../assets/shared/desktop/icon-twitter.svg"
+import { ReactComponent as youtube} from "../../assets/shared/desktop/icon-youtube.svg"
+import { ReactComponent as pinterest} from "../../assets/shared/desktop/icon-pinterest.svg"
+
 import bgMobile from "../../assets/shared/desktop/bg-pattern-call-to-action.svg"
 
 export const FooterContainer = styled.div``;
@@ -11,7 +18,7 @@ export const GetInTouchContainer = styled.div`
     color: ${({theme}) => theme.colors.white};
     background-image: url('${bgMobile}');
     background-repeat: no-repeat;
-    background-position-x: 43%;
+    background-position-x: 40%;
     background-position-y: 49%;
     background-color: ${({theme}) => theme.colors.peach};
     text-align: center;
@@ -120,8 +127,8 @@ export const Link = styled(NavLink)`
     color: ${({theme}) => theme.colors.white};
 
     &:hover {
-        color:${({theme}) => theme.colors.peach};
-        transition: color .8s ease-in;
+        text-decoration: underline 1px ${({theme}) => theme.colors.opac};
+        transition: underline 1s ease-in;
     }
 
 `
@@ -148,3 +155,55 @@ export const SocialMediaContainer = styled.div`
     justify-content: space-between;
 `;
 
+export const StyledFacebookIcon = styled(facebook)`
+
+    background: url('http://www.facebook.com');
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover path {
+        fill: ${({theme}) => theme.colors.lightPeach}
+    }
+`;
+export const StyledYoutubeIcon = styled(youtube)`
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover path {
+        fill: ${({theme}) => theme.colors.lightPeach}
+    }
+`;
+export const StyledTwitterIcon = styled(twitter)`
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover path {
+        fill: ${({theme}) => theme.colors.lightPeach}
+    }
+`;
+export const StyledPinterestIcon = styled(pinterest)`
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover path {
+        fill: ${({theme}) => theme.colors.lightPeach}
+    }
+`;
+export const StyledInstagramIcon = styled(instagram)`
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover path {
+        fill: ${({theme}) => theme.colors.lightPeach}
+    }
+`;

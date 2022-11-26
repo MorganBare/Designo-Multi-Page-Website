@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { LinkRouter } from "react-router-dom"
 
 import { FooterContainer, 
         ContactPageInfoContainer, 
@@ -8,14 +8,15 @@ import { FooterContainer,
         AddressOuterContainer, 
         SingleContactContainer, 
         SocialMediaContainer, 
-        InnerContactContainer } from './Footer.styled'
+        InnerContactContainer,
+        StyledFacebookIcon,
+        StyledYoutubeIcon,
+        StyledTwitterIcon,
+        StyledPinterestIcon,
+        StyledInstagramIcon } from './Footer.styled'
 
 import lightLogo from "../../assets/shared/desktop/logo-light.png"
-import instagram from "../../assets/shared/desktop/icon-instagram.svg"
-import facebook from "../../assets/shared/desktop/icon-facebook.svg"
-import twitter from "../../assets/shared/desktop/icon-twitter.svg"
-import youtube from "../../assets/shared/desktop/icon-youtube.svg"
-import pinterest from "../../assets/shared/desktop/icon-pinterest.svg"
+
 
 export default function Footer2() {
   return (
@@ -43,11 +44,11 @@ export default function Footer2() {
             </SingleContactContainer>
           </AddressOuterContainer>
           <SocialMediaContainer>
-            <img src={facebook} alt="" />
-            <img src={youtube} alt="" />
-            <img src={twitter} alt="" />
-            <img src={pinterest} alt="" />
-            <img src={instagram} alt="" />
+            <a href='http://www.facebook.com' target='_blank' rel='noreferrer'><StyledFacebookIcon /></a>
+            <a href='http://www.youtube.com' target='_blank' rel='noreferrer'><StyledYoutubeIcon/></a>
+            <a href='http://www.twitter.com' target='_blank' rel='noreferrer'><StyledTwitterIcon/></a>
+            <a href='http://www.pinterest.com' target='_blank' rel='noreferrer'><StyledPinterestIcon/></a>
+            <a href='http://www.instagram.com' target='_blank' rel='noreferrer'><StyledInstagramIcon/></a>
           </SocialMediaContainer>
         </InnerContactContainer>
       </ContactPageInfoContainer>
