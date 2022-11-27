@@ -1,4 +1,4 @@
-import Navigation from "./Navigation";
+import Navigation from "./navigation/Navigation";
 import Footer from "./footers/Footer";
 import FooterContact from "./footers/FooterContact";
 

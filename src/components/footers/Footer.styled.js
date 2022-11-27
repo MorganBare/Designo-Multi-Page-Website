@@ -121,6 +121,11 @@ export const InnerContactContainer = styled.div`
     }
 
     @media only screen and (min-width: 1024px) { 
+        width: 900px;
+        margin: auto;
+    }
+
+    @media only screen and (min-width: 1400px) { 
         width: 1111px;
         margin: auto;
     }
@@ -254,6 +259,7 @@ export const SocialMediaContainer = styled.div`
 `;
 
 export const FlexDiv = styled.div`
+
     @media only screen and (min-width: 767px) {
         display: flex;
         width: 100%;

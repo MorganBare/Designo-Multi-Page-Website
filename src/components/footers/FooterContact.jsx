@@ -23,7 +23,9 @@ import lightLogo from "../../assets/shared/desktop/logo-light.png"
 export default function Footer2() {
   return (
     <FooterContainer>
+
       <ContactPageInfoContainer>
+
       <InnerContactContainer>
           <ContactNav>
             <img src={lightLogo} alt="logo" style={{width: '202px', height: '27px'}} />
@@ -55,6 +57,7 @@ export default function Footer2() {
               </SocialMediaContainer>
               </FlexDiv>
           </InnerContactContainer>
+          
       </ContactPageInfoContainer>
 
     </FooterContainer>
