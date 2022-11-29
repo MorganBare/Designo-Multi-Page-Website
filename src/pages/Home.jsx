@@ -1,10 +1,13 @@
 import React from 'react'
 
-import { HeroHome } from '../components'
+import { HeroHome, ProjectLinks } from '../components'
 
 function Home() {
   return (
-    <HeroHome/>
+    <>
+      <HeroHome/>
+      <ProjectLinks/>
+    </>
   )
 }
 

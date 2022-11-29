@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-import HeroPhoneSrc from '../../../assets/home/desktop/image-hero-phone.png'
-
 import herobg from '../../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg'
 
 export const HeroHomeContainer = styled.div`
@@ -42,5 +40,10 @@ export const HeroPhoneImg = styled.img`
     bottom: -22%;
     backface-visibility: hidden;
     transform: scale(1.7);
+
+    @media screen and (min-width:399px) {
+        bottom: -27%;
+        transform: scale(1.6);
+    }
 
 `;
