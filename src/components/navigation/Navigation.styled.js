@@ -3,13 +3,17 @@ import styled from "styled-components";
 import { NavLink } from 'react-router-dom';
 
 export const NavigationOuterContainer = styled.div`
-    width: clamp(327px, 89%, 1111px);
+    width: clamp(689px, 89%, 1111px);
     display: flex;
     margin: auto;
     justify-content: space-between;
     align-items: center;
     margin: 3rem auto;
     border: 1px red solid;
+
+    @media only screen and (max-width: 692px) { 
+        display: none;
+    }
 `;
 
 export const TopNavigation = styled.div`

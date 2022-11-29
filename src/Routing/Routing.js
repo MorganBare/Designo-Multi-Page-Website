@@ -1,13 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { About, AppDesign, Contact, GraphicDesign, Locations, WebDesign, Home} from "../pages"
-import { Navigation } from "../components"
+import { MobileNavigation, Navigation } from "../components"
 import {ContactLayout, MainLayout} from "../layouts"
 
 const Routing = () => {
+
     return (
         <Router>
             <Navigation/>
+            <MobileNavigation/>
             <Routes>
                 <Route path="/" element={<MainLayout><Home /></MainLayout>} />
                 <Route path="/App-Design" element={<MainLayout><AppDesign /></MainLayout>} />
