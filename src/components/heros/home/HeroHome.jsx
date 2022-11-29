@@ -2,9 +2,13 @@ import React from 'react'
 
 import { DarkButton } from '../../../styles/Buttons.styled'
 
+import HeroPhoneSrc from '../../../assets/home/desktop/image-hero-phone.png'
+
 import {
   HeroHomeContainer,
-  HeroHomeContent} from "./HeroHome.styled"
+  HeroHomeContent,
+  HeroPhoneImg
+} from "./HeroHome.styled"
 
 export default function HeroHome() {
   return (
@@ -17,7 +21,7 @@ export default function HeroHome() {
           brand experiences. Find out more about our services.</p>
         <DarkButton>LEARN MORE</DarkButton>
       </HeroHomeContent>
-
+      <HeroPhoneImg src={HeroPhoneSrc}/>
     </HeroHomeContainer>
   )
 }
