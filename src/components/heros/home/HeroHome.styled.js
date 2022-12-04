@@ -40,10 +40,15 @@ export const HeroPhoneImg = styled.img`
     bottom: -22%;
     backface-visibility: hidden;
     transform: scale(1.7);
+    max-width: 380px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
 
-    @media screen and (min-width:399px) {
-        bottom: -27%;
+    @media screen and (min-width:320px) {
         transform: scale(1.6);
     }
+
 
 `;
