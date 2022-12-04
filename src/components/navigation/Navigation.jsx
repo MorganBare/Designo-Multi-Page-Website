@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { NavLink } from 'react-router-dom';
+
 import { 
   TopNavLink,
   NavigationOuterContainer,
@@ -11,7 +13,7 @@ import darkLogo  from "../../assets/shared/desktop/logo-dark.png"
 export default function Navigation() {
   return (
     <NavigationOuterContainer>
-      <img src={darkLogo} alt="logo" style={{width: '202px', height: '27px'}} />
+      <NavLink to="/"><img src={darkLogo} alt="logo" style={{width: '202px', height: '27px'}} /></NavLink>
       <TopNavigation>
         <ul>
             <li><TopNavLink to="/About">our company</TopNavLink></li>
