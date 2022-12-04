@@ -9,7 +9,6 @@ export const NavigationOuterContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     margin: 3rem auto;
-    border: 1px red solid;
 
     @media only screen and (max-width: 692px) { 
         display: none;

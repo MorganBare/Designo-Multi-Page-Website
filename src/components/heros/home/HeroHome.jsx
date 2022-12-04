@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { NavLink } from 'react-router-dom';
+
 import { DarkButton } from '../../../styles/Buttons.styled'
 
 import HeroPhoneSrc from '../../../assets/home/desktop/image-hero-phone.png'
@@ -19,7 +21,7 @@ export default function HeroHome() {
         <p>With over 10 years in the industry, we are experienced in 
           creating fully responsive websites, app design, and engaging 
           brand experiences. Find out more about our services.</p>
-        <DarkButton>LEARN MORE</DarkButton>
+        <NavLink to="/About"><DarkButton>LEARN MORE</DarkButton></NavLink>
       </HeroHomeContent>
       <HeroPhoneImg src={HeroPhoneSrc}/>
     </HeroHomeContainer>

@@ -21,3 +21,5 @@ export const StyledResourcefulSVG = styled(resourcefulSVG)`
 export const StyledFriendlySVG = styled(friendlySVG)`
 
 `;
+
+
