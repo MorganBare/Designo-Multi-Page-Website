@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from "react-router-dom"
 
 import { FooterContainer, 
         GetInTouchContainer, 
@@ -31,7 +32,7 @@ export default function Footer() {
           <h2>Let's talk about your project</h2>
           <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
         </div>
-        <DarkButton>GET IN TOUCH</DarkButton>
+        <NavLink to='/contact'><DarkButton>GET IN TOUCH</DarkButton></NavLink>
       </GetInTouchContainer>
 
       <ContactInfoContainer>
