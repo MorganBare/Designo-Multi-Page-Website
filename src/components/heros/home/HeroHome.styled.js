@@ -57,7 +57,7 @@ export const HeroHomeContent = styled.div`
 
     @media screen and (min-width:760px) {
         width: 550px;
-        margin: 0 auto;
+        padding: 1rem 0;
 
         h1 {
         line-height: ${({theme}) => theme.lineHeight.large};
