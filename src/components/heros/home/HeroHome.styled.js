@@ -34,10 +34,9 @@ export const HeroHomeContainer = styled.div`
 
     @media screen and (min-width:1440px) {
         width: 1111px;
-        background-size: 1950px;
+        background-size: 1935px;
         background-position-y: 0px;
-        background-position-x: -200px;
-        height: 640px;
+        background-position-x: -165px;
     }
 `;
 
@@ -82,6 +81,16 @@ export const HeroHomeContent = styled.div`
             padding: 1.5rem 6rem 2rem 0;
         }
     }
+
+    @media screen and (min-width:1440px) {
+        margin-left: 6.5rem;
+        width: 700px;
+        p{
+            font-size: ${({theme}) => theme.fontSize.body};
+            padding: 1.5rem 5rem 2rem 0;
+        }
+    }
+
 `;
 
 export const HeroPhoneImg = styled.img`
@@ -113,10 +122,10 @@ export const HeroPhoneImg = styled.img`
     }
 
     @media screen and (min-width:1440px) {
-        transform: scale(1.6);
-        left: 50%; 
+        transform: scale(1.7);
+        left: 61%; 
         right: 0; 
-        bottom: 0%;
+        bottom: -8%;
     }
 
 `;
