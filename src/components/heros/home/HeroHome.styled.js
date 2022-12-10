@@ -26,6 +26,8 @@ export const HeroHomeContainer = styled.div`
 
     @media screen and (min-width:1023px) {
         width: 911px;
+        height: 640px;
+        padding-top: 9rem;
     }
 
     @media screen and (min-width:1440px) {
@@ -69,12 +71,20 @@ export const HeroHomeContent = styled.div`
             padding: 1.5rem 2.8rem;
         }
     }
+
+    @media screen and (min-width:1023px) {
+        margin-left: 4rem;
+        text-align: left;
+
+        p{
+            padding: 1.5rem 6rem 2rem 0;
+        }
+    }
 `;
 
 export const HeroPhoneImg = styled.img`
 
     position: absolute;
-    display: block;
     bottom: -23%;
     backface-visibility: hidden;
     transform: scale(1.7);
@@ -91,6 +101,13 @@ export const HeroPhoneImg = styled.img`
 
     @media screen and (min-width:760px) {
        transform: scale(1.6);
+    }
+
+    @media screen and (min-width:1023px) {
+        margin-left: 0;
+        left: 58%; 
+        right: 0; 
+        bottom: -10%;
     }
 
     @media screen and (min-width:1440px) {
