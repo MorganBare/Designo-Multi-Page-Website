@@ -40,6 +40,8 @@ export const HeroHomeContainer = styled.div`
 export const HeroHomeContent = styled.div`
     text-align: center;
     padding: 1rem 1.5rem;
+    max-width: 500px;
+    margin: 0 auto;
 
     h1 {
         font-weight: ${({theme}) => theme.fontWeight.medium};
