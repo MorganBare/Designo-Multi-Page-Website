@@ -28,6 +28,8 @@ export const HeroHomeContainer = styled.div`
         width: 911px;
         height: 640px;
         padding-top: 9rem;
+        background-position-y: 0px;
+        background-position-x: -340px;
     }
 
     @media screen and (min-width:1440px) {
