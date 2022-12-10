@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const DarkButton = styled.button`
+    position: relative;
+    z-index: 100;
     color: ${({theme}) => theme.colors.black};
     text-transform: uppercase;
     background-color: ${({theme}) => theme.colors.white};
@@ -20,6 +22,7 @@ export const DarkButton = styled.button`
 `;
 
 export const LightButton = styled.button`
+    position: relative;
     color: ${({theme}) => theme.colors.white};
     text-transform: uppercase;
     background-color: ${({theme}) => theme.colors.peach};
@@ -30,7 +33,6 @@ export const LightButton = styled.button`
     font-weight: ${({theme}) => theme.fontWeight.medium};
     font-size: ${({theme}) => theme.fontSize.button};
     padding: 17px 18.5px;
-    z-index: 100;
 
     &:hover{
         background-color: ${({theme}) => theme.colors.lightPeach};

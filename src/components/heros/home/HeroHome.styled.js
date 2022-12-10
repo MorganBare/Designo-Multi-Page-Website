@@ -42,6 +42,7 @@ export const HeroHomeContent = styled.div`
     padding: 1rem 1.5rem;
     max-width: 500px;
     margin: 0 auto;
+    position: relative;
 
     h1 {
         font-weight: ${({theme}) => theme.fontWeight.medium};
@@ -73,6 +74,7 @@ export const HeroHomeContent = styled.div`
 export const HeroPhoneImg = styled.img`
 
     position: absolute;
+    display: block;
     bottom: -23%;
     backface-visibility: hidden;
     transform: scale(1.7);
