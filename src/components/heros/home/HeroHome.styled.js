@@ -15,6 +15,26 @@ export const HeroHomeContainer = styled.div`
     overflow: hidden;
 
     padding-top: 3.9rem;
+
+    @media screen and (min-width:760px) {
+        width: 689px;
+        margin: 0 auto;
+        border-radius: 15px;
+        background-position-y: 120px;
+        background-position-x: -485px;
+    }
+
+    @media screen and (min-width:1023px) {
+        width: 911px;
+    }
+
+    @media screen and (min-width:1440px) {
+        width: 1111px;
+        background-size: 1950px;
+        background-position-y: 0px;
+        background-position-x: -200px;
+        height: 640px;
+    }
 `;
 
 export const HeroHomeContent = styled.div`
@@ -32,12 +52,26 @@ export const HeroHomeContent = styled.div`
         font-size: ${({theme}) => theme.fontSize.button};
         padding: 1.5rem 0;
     }
+
+    @media screen and (min-width:760px) {
+        width: 550px;
+        margin: 0 auto;
+
+        h1 {
+        line-height: ${({theme}) => theme.lineHeight.large};
+        font-size: 48px;
+        }
+
+        p{
+            padding: 1.5rem 2.8rem;
+        }
+    }
 `;
 
 export const HeroPhoneImg = styled.img`
 
     position: absolute;
-    bottom: -22%;
+    bottom: -23%;
     backface-visibility: hidden;
     transform: scale(1.7);
     max-width: 380px;
@@ -45,10 +79,21 @@ export const HeroPhoneImg = styled.img`
     right: 0; 
     margin-left: auto; 
     margin-right: auto; 
+    z-index: 0;
 
     @media screen and (min-width:320px) {
         transform: scale(1.6);
     }
 
+    @media screen and (min-width:760px) {
+       transform: scale(1.6);
+    }
+
+    @media screen and (min-width:1440px) {
+        transform: scale(1.6);
+        left: 50%; 
+        right: 0; 
+        bottom: 0%;
+    }
 
 `;

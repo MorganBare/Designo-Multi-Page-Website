@@ -30,6 +30,7 @@ export const LightButton = styled.button`
     font-weight: ${({theme}) => theme.fontWeight.medium};
     font-size: ${({theme}) => theme.fontSize.button};
     padding: 17px 18.5px;
+    z-index: 100;
 
     &:hover{
         background-color: ${({theme}) => theme.colors.lightPeach};
