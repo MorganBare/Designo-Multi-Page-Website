@@ -15,6 +15,12 @@ export const SingleValueContainer = styled.div`
     padding: 2.5em 0;
     max-width: 330px;
     margin: 0 auto;
+
+    @media screen and (min-width:768px) {
+        max-width: 690px;
+        display: flex;
+        text-align: left;
+    }
 `;
 
 export const ValueContent = styled.div`
@@ -23,6 +29,16 @@ export const ValueContent = styled.div`
         padding: 1.8em 0;
         letter-spacing: ${({theme}) => theme.letterSpacing.large};
         font-weight: ${({theme}) => theme.fontWeight.medium};
+    }
+
+    @media screen and (min-width:768px) {
+
+        padding-left: 2em;
+        padding-right: 1em;
+        
+        h3{
+            padding-bottom: 1em;
+        }
     }
 `;
 
