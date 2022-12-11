@@ -102,7 +102,7 @@ export const LeafImg = styled.img`
             display: block;
             z-index: -1;
             position: absolute;
-            left: 23%;
+            left: 24%;
             top: 30%;
             transform: rotate(180deg);
         }

@@ -1,24 +1,34 @@
 import React from 'react'
 
+import { NavLink } from 'react-router-dom';
+
 import { 
     ProjectLinksContainer,
-    ProjectSquare } from './ProjectLinks.styled'
+    ProjectSquareWeb,
+    ProjectSquareApp,
+    ProjectSquareGraphic } from './ProjectLinks.styled'
 
 export default function ProjectLinks() {
   return (
     <ProjectLinksContainer>
-        <ProjectSquare>
-            <h2>WEB DESIGN</h2>
-            <p>VIEW PROJECTS</p>
-        </ProjectSquare>
-        <ProjectSquare>
-            <h2>APP DESIGN</h2>
-            <p>VIEW PROJECTS</p>
-        </ProjectSquare>
-        <ProjectSquare>
-            <h2>GRAPHIC DESIGN</h2>
-            <p>VIEW PROJECTS</p>
-        </ProjectSquare>
+        <NavLink>
+            <ProjectSquareWeb>
+                <h2>WEB DESIGN</h2>
+                <p>VIEW PROJECTS</p>
+            </ProjectSquareWeb>
+        </NavLink>
+        <NavLink>
+            <ProjectSquareApp>
+                <h2>APP DESIGN</h2>
+                <p>VIEW PROJECTS</p>
+            </ProjectSquareApp>
+        </NavLink>
+        <NavLink>
+            <ProjectSquareGraphic>
+                <h2>GRAPHIC DESIGN</h2>
+                <p>VIEW PROJECTS</p>
+            </ProjectSquareGraphic>
+        </NavLink>
 
     </ProjectLinksContainer>
   )
