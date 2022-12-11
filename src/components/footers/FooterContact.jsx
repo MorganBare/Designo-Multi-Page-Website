@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { FooterContainer, 
+import { ContactFooterContainer, 
         ContactPageInfoContainer, 
         ContactNav, 
         Link,
@@ -21,11 +21,11 @@ import lightLogo from "../../assets/shared/desktop/logo-light.png"
 
 export default function Footer2() {
   return (
-    <FooterContainer>
+    <ContactFooterContainer>
 
       <ContactPageInfoContainer>
 
-      <InnerContactContainer>
+        <InnerContactContainer>
           <ContactNav>
             <img src={lightLogo} alt="logo" style={{width: '202px', height: '27px'}} />
             <ul>
@@ -59,6 +59,6 @@ export default function Footer2() {
           
       </ContactPageInfoContainer>
 
-    </FooterContainer>
+    </ContactFooterContainer>
   )
 }

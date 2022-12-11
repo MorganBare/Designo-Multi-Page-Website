@@ -11,7 +11,20 @@ import { ReactComponent as pinterest} from "../../assets/shared/desktop/icon-pin
 
 import bgMobile from "../../assets/shared/desktop/bg-pattern-call-to-action.svg"
 
-export const FooterContainer = styled.div``;
+export const FooterContainer = styled.div`
+    margin-top: -130px;
+
+    @media screen and (min-width: 767px) {
+        margin-top: -50px;
+    }
+
+    @media screen and (min-width: 1000px) {
+        margin-top: 0;
+    }
+`;
+
+export const ContactFooterContainer = styled.div`
+`;
 
 export const GetInTouchContainer = styled.div`
 
