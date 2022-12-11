@@ -5,13 +5,14 @@ import {
     SingleValueContainer,
     StyledPassionateSVG,
     StyledResourcefulSVG,
-    StyledFriendlySVG } from './Values.styled'
+    StyledFriendlySVG,
+    SVGContainer } from './Values.styled'
 
 export default function Values() {
   return (
     <ValuesContainer>
         <SingleValueContainer>
-            <StyledPassionateSVG></StyledPassionateSVG>
+        <SVGContainer><StyledPassionateSVG/></SVGContainer>
             <div>
                 <h3>PASSIONATE</h3>
                 <p>Each project starts with an in-depth 
@@ -23,7 +24,7 @@ export default function Values() {
             </div>
         </SingleValueContainer>
         <SingleValueContainer>
-            <StyledResourcefulSVG></StyledResourcefulSVG>
+        <SVGContainer><StyledResourcefulSVG/></SVGContainer>
             <div>
                 <h3>RESOURCEFUL</h3>
                 <p>Everything that we do has a strategic purpose. 
@@ -34,7 +35,7 @@ export default function Values() {
             </div>
         </SingleValueContainer>
         <SingleValueContainer>
-            <StyledFriendlySVG></StyledFriendlySVG>
+            <SVGContainer><StyledFriendlySVG/></SVGContainer>
             <div>
                 <h3>FRIENDLY</h3>
                 <p> We are a group of enthusiastic folks who know how 
