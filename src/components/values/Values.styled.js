@@ -8,6 +8,17 @@ import { ReactComponent as friendlySVG } from "../../assets/home/desktop/illustr
 
 export const ValuesContainer = styled.div`
     margin: 1.5em;
+
+    @media screen and (min-width:1024px) {
+        display: flex;
+        max-width: 1110px;
+        margin: 0 auto;
+        padding: 0 2em;
+    }
+
+    @media screen and (min-width:1440px) {
+        padding: 0;
+    }
 `;
 
 export const SingleValueContainer = styled.div`
@@ -20,6 +31,19 @@ export const SingleValueContainer = styled.div`
         max-width: 690px;
         display: flex;
         text-align: left;
+        padding: 1em 0;
+    }
+
+    @media screen and (min-width:1024px) {
+        max-width: 690px;
+        display: block;
+        text-align: center;
+        max-width: 350px;
+        padding: 0 1em;
+    }
+
+    @media screen and (min-width:1440px) {
+        padding: 0;
     }
 `;
 
@@ -38,6 +62,13 @@ export const ValueContent = styled.div`
         
         h3{
             padding-bottom: 1em;
+        }
+
+        @media screen and (min-width:1024px) {
+            padding: 0;
+            h3{
+                padding: 1.8em 0;
+            }
         }
     }
 `;
