@@ -8,6 +8,8 @@ import { ReactComponent as friendlySVG } from "../../assets/home/desktop/illustr
 
 export const ValuesContainer = styled.div`
     margin: 1.5em;
+    z-index: 100;
+    position: relative;
 
     @media screen and (min-width:1024px) {
         display: flex;
@@ -18,6 +20,7 @@ export const ValuesContainer = styled.div`
 
     @media screen and (min-width:1440px) {
         padding: 0;
+        margin-bottom: 4em;
     }
 `;
 
@@ -92,4 +95,15 @@ export const StyledFriendlySVG = styled(friendlySVG)`
 
 `;
 
+export const LeafImg = styled.img`
+    display: none;
 
+    @media screen and (min-width:1440px) {
+            display: block;
+            z-index: -1;
+            position: absolute;
+            left: 23%;
+            top: 30%;
+            transform: rotate(180deg);
+        }
+`;

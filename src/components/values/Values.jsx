@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Leaf from '../../assets/shared/desktop/bg-pattern-leaf.svg'
+
 import { 
     ValuesContainer, 
     SingleValueContainer,
@@ -7,7 +9,8 @@ import {
     StyledResourcefulSVG,
     StyledFriendlySVG,
     SVGContainer,
-    ValueContent } from './Values.styled'
+    ValueContent,
+    LeafImg } from './Values.styled'
 
 export default function Values() {
   return (
@@ -46,6 +49,7 @@ export default function Values() {
                 </p>
             </ValueContent>
         </SingleValueContainer>
+        <LeafImg src={Leaf}/>
     </ValuesContainer>
   )
 }

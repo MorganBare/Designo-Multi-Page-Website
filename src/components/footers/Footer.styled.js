@@ -25,6 +25,7 @@ export const GetInTouchContainer = styled.div`
     height: 379px;
     width: clamp(327px, 89%, 1111px);
     border-radius: 15px;
+    z-index: 100;
 
     margin: auto;
     padding: 4em 1.5em;
