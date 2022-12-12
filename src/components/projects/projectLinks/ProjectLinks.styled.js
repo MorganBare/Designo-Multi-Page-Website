@@ -97,3 +97,15 @@ export const GraphicDesignSquare = styled(DesignSquare)`
 export const ArrowIcon = styled(Arrow)`
     margin-left: 10px;
 `;
+
+export const LeafImg2 = styled.img`
+    display: none;
+
+    @media screen and (min-width:1440px) {
+            display: block;
+            z-index: -1;
+            position: absolute;
+            right: 32%;
+            bottom: 65%;
+        }
+`;

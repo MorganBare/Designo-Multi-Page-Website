@@ -1,16 +1,20 @@
 import React from 'react'
 
+import Leaf from '../../../assets/shared/desktop/bg-pattern-leaf.svg'
+
 import { 
     ProjectLinksContainer,
     WebDesignSquare,
     AppDesignSquare,
     GraphicDesignSquare,
     Link,
-    ArrowIcon} from './ProjectLinks.styled'
+    ArrowIcon,
+    LeafImg2} from './ProjectLinks.styled'
 
 export default function ProjectLinks() {
   return (
     <ProjectLinksContainer>
+        <LeafImg2 src={Leaf}/>
         <Link to="/Web-Design">
             <WebDesignSquare>
                 <h2>WEB DESIGN</h2>
