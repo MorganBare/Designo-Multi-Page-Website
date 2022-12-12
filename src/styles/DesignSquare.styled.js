@@ -48,4 +48,9 @@ export const DesignSquare = styled.div`
             letter-spacing: ${({theme}) => theme.letterSpacing.large};
         }
     }
+
+    @media screen and (min-width:1440px) {
+        width: 541px;
+        height: 308px;
+    }
 `;
