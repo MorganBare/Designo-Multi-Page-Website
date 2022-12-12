@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DesignSquare } from "../../../styles/DesignSquare.styled";
 
 import { NavLink } from 'react-router-dom';
 
@@ -29,47 +30,16 @@ export const ProjectLinksContainer = styled.div`
     }
 `;
 
-export const ProjectSquareWeb = styled.div`
-    height: 250px;
-    width: 327px;
+export const WebDesignSquare = styled(DesignSquare)`
     background: url(${MobileWeb}), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
-    background-blend-mode: overlay;
-    border-radius: 15px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    &:hover {
-        background: url(${MobileWeb}), linear-gradient(rgba(231,129,107,0.9),rgba(231,129,107,0.9));
-    }
 `;
 
-export const ProjectSquareApp = styled.div`
-    height: 250px;
-    width: 327px;
+export const AppDesignSquare = styled(DesignSquare)`
     background: url(${MobileApp}), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
-    background-blend-mode: overlay;
-    border-radius: 15px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 `;
 
-export const ProjectSquareGraphic = styled.div`
-    height: 250px;
-    width: 327px;
-    background: url(${MobileGraphic}), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));;
-    background-blend-mode: overlay;
-    border-radius: 15px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+export const GraphicDesignSquare = styled(DesignSquare)`
+    background: url(${MobileGraphic}), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
 `;
 
 export const Link = styled(NavLink)`

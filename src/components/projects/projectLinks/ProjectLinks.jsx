@@ -2,32 +2,32 @@ import React from 'react'
 
 import { 
     ProjectLinksContainer,
-    ProjectSquareWeb,
-    ProjectSquareApp,
-    ProjectSquareGraphic,
+    WebDesignSquare,
+    AppDesignSquare,
+    GraphicDesignSquare,
     Link,
-    ArrowIcon } from './ProjectLinks.styled'
+    ArrowIcon} from './ProjectLinks.styled'
 
 export default function ProjectLinks() {
   return (
     <ProjectLinksContainer>
         <Link to="/Web-Design">
-            <ProjectSquareWeb>
+            <WebDesignSquare>
                 <h2>WEB DESIGN</h2>
                 <p>VIEW PROJECTS<ArrowIcon/></p>
-            </ProjectSquareWeb>
+            </WebDesignSquare>
         </Link>
         <Link to="/App-Design">
-            <ProjectSquareApp>
+            <AppDesignSquare>
                 <h2>APP DESIGN</h2>
                 <p>VIEW PROJECTS<ArrowIcon/></p>
-            </ProjectSquareApp>
+            </AppDesignSquare>
         </Link>
         <Link to="/Graphic-Design">
-            <ProjectSquareGraphic>
+            <GraphicDesignSquare>
                 <h2>GRAPHIC DESIGN</h2>
                 <p>VIEW PROJECTS<ArrowIcon/></p>
-            </ProjectSquareGraphic>
+            </GraphicDesignSquare>
         </Link>
 
     </ProjectLinksContainer>
