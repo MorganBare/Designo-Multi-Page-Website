@@ -8,6 +8,10 @@ import MobileGraphic from '../../../assets/home/mobile/image-graphic-design.jpg'
 import MobileWeb from '../../../assets/home/mobile/image-web-design.jpg'
 import {ReactComponent as Arrow} from '../../../assets/shared/desktop/icon-right-arrow.svg'
 
+import TabletApp from '../../../assets/home/tablet/image-app-design.jpg'
+import TabletGraphic from '../../../assets/home/tablet/image-graphic-design.jpg'
+import TabletWeb from '../../../assets/home/tablet/image-web-design.jpg'
+
 export const ProjectLinksContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -15,31 +19,30 @@ export const ProjectLinksContainer = styled.div`
     gap: 1.5em;
     margin-top: 6em;
     margin-bottom: 5em;
-    text-align: center;
-
-    h2 {
-        font-size: ${({theme}) => theme.fontSize.h2};
-        font-weight: ${({theme}) => theme.fontWeight.medium};
-        letter-spacing: 1.4px;
-
-    }
-
-    p {
-        font-size: ${({theme}) => theme.fontSize.button};
-        letter-spacing: ${({theme}) => theme.letterSpacing.large};
-    }
 `;
 
 export const WebDesignSquare = styled(DesignSquare)`
     background: url(${MobileWeb}), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+
+    @media screen and (min-width:760px) {
+        background: url(${TabletWeb}), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    }
 `;
 
 export const AppDesignSquare = styled(DesignSquare)`
     background: url(${MobileApp}), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+
+    @media screen and (min-width:760px) {
+        background: url(${TabletApp}), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    }
 `;
 
 export const GraphicDesignSquare = styled(DesignSquare)`
     background: url(${MobileGraphic}), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+
+    @media screen and (min-width:760px) {
+        background: url(${TabletGraphic}), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    }
 `;
 
 export const Link = styled(NavLink)`
