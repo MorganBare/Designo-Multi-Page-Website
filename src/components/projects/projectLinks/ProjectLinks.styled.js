@@ -109,3 +109,4 @@ export const LeafImg2 = styled.img`
             bottom: 65%;
         }
 `;
+
