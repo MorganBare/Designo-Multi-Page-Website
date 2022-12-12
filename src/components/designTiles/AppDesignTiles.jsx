@@ -3,19 +3,19 @@ import React from 'react'
 import {
     DesignTilesContainer,
     Link,
-    AppDesignSquare,
+    WebDesignSquare2,
     GraphicDesignSquare,
     ArrowIcon
 } from './WebDesignTiles.styled'
 
-export default function WebDesignTiles() {
+export default function AppDesignTiles() {
   return (
     <DesignTilesContainer>
-        <Link to="/App-Design">
-            <AppDesignSquare>
-                <h2>APP DESIGN</h2>
+        <Link to="/Web-Design">
+            <WebDesignSquare2>
+                <h2>WEB DESIGN</h2>
                 <p>VIEW PROJECTS<ArrowIcon/></p>
-            </AppDesignSquare>
+            </WebDesignSquare2>
         </Link>
         <Link to="/Graphic-Design">
             <GraphicDesignSquare>

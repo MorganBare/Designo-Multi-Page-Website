@@ -6,6 +6,7 @@ import HeroHome from "./heros/home/HeroHome";
 import ProjectLinks from "./projects/projectLinks/ProjectLinks";
 import Values from "./values/Values";
 import WebDesignTiles from "./designTiles/WebDesignTiles";
+import AppDesignTiles from "./designTiles/AppDesignTiles";
 
 export { 
     Navigation, 
@@ -15,5 +16,6 @@ export {
     HeroHome, 
     ProjectLinks,
     Values,
-    WebDesignTiles };
+    WebDesignTiles,
+    AppDesignTiles };
 
