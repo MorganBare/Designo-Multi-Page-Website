@@ -7,12 +7,18 @@ import {
     DesignCardImg
 } from './Cards.styled'
 
+import Airfilter from '../../assets/app-design/desktop/image-airfilter.jpg'
+import Eyecam from '../../assets/app-design/desktop/image-eyecam.jpg'
+import Faceit from '../../assets/app-design/desktop/image-faceit.jpg'
+import Loop from '../../assets/app-design/desktop/image-loopstudios.jpg'
+import Todo from '../../assets/app-design/desktop/image-todo.jpg'
+
 export default function AppDesignCards() {
   return (
     <DesignCardContainer>
 
         <DesignCard>
-            <DesignCardImg/>
+            <DesignCardImg src={Airfilter}/>
             <DesignCardContent>
                 <h3>AIRFILTER</h3>
                 <p>Solving the problem of poor indoor air quality by filtering the air</p>
@@ -20,15 +26,15 @@ export default function AppDesignCards() {
         </DesignCard>
 
         <DesignCard>
-            <DesignCardImg/>
+            <DesignCardImg src={Eyecam}/>
             <DesignCardContent>
-                <h3>AIRFILTER</h3>
-                <p>Solving the problem of poor indoor air quality by filtering the air</p>
+                <h3>EYECAM</h3>
+                <p>Product that lets you edit your favorite photos and videos at any time</p>
             </DesignCardContent>
         </DesignCard>
 
         <DesignCard>
-            <DesignCardImg/>
+            <DesignCardImg src={Faceit}/>
             <DesignCardContent>
                 <h3>FACEIT</h3>
                 <p>Get to meet your favorite internet superstar with the faceit app</p>
@@ -36,7 +42,7 @@ export default function AppDesignCards() {
         </DesignCard>
 
         <DesignCard>
-            <DesignCardImg/>
+            <DesignCardImg src={Todo}/>
             <DesignCardContent>
                 <h3>TODO</h3>
                 <p>A todo app that features cloud sync with light and dark mode</p>
@@ -44,7 +50,7 @@ export default function AppDesignCards() {
         </DesignCard>
 
         <DesignCard>
-            <DesignCardImg/>
+            <DesignCardImg src={Loop}/>
             <DesignCardContent>
                 <h3>LOOPSTUDIOS</h3>
                 <p>A VR experience app made for Loopstudios</p>
