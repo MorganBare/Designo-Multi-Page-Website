@@ -1,9 +1,14 @@
 import React from 'react'
 
-import { AppDesignTiles } from '../components' 
+import { 
+  AppDesignTiles,
+  HeroAppDesign } from '../components' 
 
 export default function AppDesign() {
   return (
-    <AppDesignTiles/>
+    <>
+      <HeroAppDesign/>
+      <AppDesignTiles/>
+    </>
   )
 }

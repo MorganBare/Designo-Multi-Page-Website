@@ -1,9 +1,15 @@
 import React from 'react'
 
-import GraphicDesignTiles from '../components/designTiles/GraphicDesignTiles'
+import { 
+  HeroGraphicDesign,
+  GraphicDesignTiles
+} from '../components' 
 
 export default function GraphicDesign() {
   return (
-    <GraphicDesignTiles/>
+    <>
+      <HeroGraphicDesign/>
+      <GraphicDesignTiles/>
+    </>
   )
 }

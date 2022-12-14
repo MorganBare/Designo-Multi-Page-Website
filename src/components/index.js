@@ -8,6 +8,9 @@ import Values from "./values/Values";
 import WebDesignTiles from "./designTiles/WebDesignTiles";
 import AppDesignTiles from "./designTiles/AppDesignTiles";
 import GraphicDesignTiles from "./designTiles/GraphicDesignTiles";
+import HeroWebDesign from "./heros/design/HeroWebDesign";
+import HeroAppDesign from "./heros/design/HeroAppDesign";
+import HeroGraphicDesign from "./heros/design/HeroGraphicDesign";
 
 export { 
     Navigation, 
@@ -19,5 +22,8 @@ export {
     Values,
     WebDesignTiles,
     AppDesignTiles,
-    GraphicDesignTiles };
+    GraphicDesignTiles,
+    HeroWebDesign,
+    HeroAppDesign,
+    HeroGraphicDesign };
 

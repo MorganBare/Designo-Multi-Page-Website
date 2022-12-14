@@ -17,7 +17,7 @@ export default function GraphicDesignTiles() {
                 <p>VIEW PROJECTS<ArrowIcon/></p>
             </AppDesignSquare>
         </Link>
-        <Link to="/Graphic-Design">
+        <Link to="/Web-Design">
             <WebDesignSquare2>
                 <h2>WEB DESIGN</h2>
                 <p>VIEW PROJECTS<ArrowIcon/></p>
