@@ -11,6 +11,9 @@ import GraphicDesignTiles from "./designTiles/GraphicDesignTiles";
 import HeroWebDesign from "./heros/design/HeroWebDesign";
 import HeroAppDesign from "./heros/design/HeroAppDesign";
 import HeroGraphicDesign from "./heros/design/HeroGraphicDesign";
+import AppDesignCards from "./cards/AppDesignCards";
+import WebDesignCards from "./cards/WebDesignCards";
+import GraphicDesignCards from "./cards/GraphicDesignCards";
 
 export { 
     Navigation, 
@@ -25,5 +28,8 @@ export {
     GraphicDesignTiles,
     HeroWebDesign,
     HeroAppDesign,
-    HeroGraphicDesign };
+    HeroGraphicDesign,
+    AppDesignCards,
+    WebDesignCards,
+    GraphicDesignCards };
 
