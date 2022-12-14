@@ -1,17 +1,17 @@
 import React from 'react'
 
 import { 
-    HeroDesignContainer,
+    HeroGraphicDesignContainer,
     Heading,
     HeroP,    
  } from './HeroDesign.styled'
 
 export default function HeroGraphicDesign() {
   return (
-    <HeroDesignContainer>
+    <HeroGraphicDesignContainer>
         <Heading>Graphic Design</Heading>
         <HeroP>We deliver eye-catching branding materials 
         that are tailored to meet your business objectives.</HeroP>
-    </HeroDesignContainer>
+    </HeroGraphicDesignContainer>
   )
 }
