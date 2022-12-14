@@ -17,6 +17,14 @@ export const DesignCardContainer = styled.div`
         padding-bottom: 1rem;
     }
 
+    @media screen and (min-width: 1440px) {
+       flex-wrap: wrap;
+       flex-direction: row;
+       max-width: 1111px;
+       margin: 7rem auto;
+       gap: 1.5rem;
+    }
+
 `;
 
 export const DesignCard = styled.div`
@@ -29,6 +37,12 @@ export const DesignCard = styled.div`
         width: 689px;
         height: 310px;
         display: flex;
+    }
+
+    @media screen and (min-width: 1440px) {
+        flex-direction: column;
+        width: 350px;
+        height: 478px;
     }
 `;
 
@@ -51,6 +65,12 @@ export const DesignCardImg = styled.img`
         width: 339px;
         height: 310px;
         border-radius: 15px 0 0 15px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 350px;
+        height: 320px;
+        border-radius: 15px 15px 0 0;
     }
 `;
 
