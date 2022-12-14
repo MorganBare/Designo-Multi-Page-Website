@@ -8,6 +8,7 @@ export const theme = {
         lightPeach: '#FFAD9B',
         darkGrey: '#333136',
         lightGrey: '#F1F3F5',
+        cream: '#fdf3f0',
         opac: 'rgba(255,255,255, 0.5)',
         opacGrey: 'rgba(51, 49, 54, 0.5)'
     },
