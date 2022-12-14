@@ -16,6 +16,7 @@ export const DesignCardContainer = styled.div`
         color: ${({theme}) => theme.colors.peach};
         padding-bottom: 1rem;
     }
+
 `;
 
 export const DesignCard = styled.div`
@@ -23,15 +24,33 @@ export const DesignCard = styled.div`
     height: 478px;
     border-radius: 15px;
     background-color: ${({theme}) => theme.colors.cream};
+
+    @media screen and (min-width: 760px) {
+        width: 689px;
+        height: 310px;
+        display: flex;
+    }
 `;
 
 export const DesignCardContent = styled.div`
     padding: 2rem 1.5rem;
+
+    @media screen and (min-width: 760px) {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+    }
 `;
 
 export const DesignCardImg = styled.img`
     display: block;
     height: 320px;
     border-radius: 15px 15px 0 0;
+
+    @media screen and (min-width: 760px) {
+        width: 339px;
+        height: 310px;
+        border-radius: 15px 0 0 15px;
+    }
 `;
 
