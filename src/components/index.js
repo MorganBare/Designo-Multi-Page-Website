@@ -7,6 +7,7 @@ import ProjectLinks from "./projects/projectLinks/ProjectLinks";
 import Values from "./values/Values";
 import WebDesignTiles from "./designTiles/WebDesignTiles";
 import AppDesignTiles from "./designTiles/AppDesignTiles";
+import GraphicDesignTiles from "./designTiles/GraphicDesignTiles";
 
 export { 
     Navigation, 
@@ -17,5 +18,6 @@ export {
     ProjectLinks,
     Values,
     WebDesignTiles,
-    AppDesignTiles };
+    AppDesignTiles,
+    GraphicDesignTiles };
 

@@ -29,8 +29,12 @@ export const DesignTilesContainer = styled.div`
     }
 
     @media screen and (min-width:1024px) {
-        flex-direction: row;
+        flex-direction: column;
         margin-bottom: 4em;
+    }
+
+    @media screen and (min-width:1440px) {
+        flex-direction: row;
     }
 `;
 

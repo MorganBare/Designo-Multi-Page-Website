@@ -4,11 +4,11 @@ import {
     DesignTilesContainer,
     Link,
     AppDesignSquare,
-    GraphicDesignSquare,
+    WebDesignSquare2,
     ArrowIcon
 } from './DesignTiles.styled'
 
-export default function WebDesignTiles() {
+export default function GraphicDesignTiles() {
   return (
     <DesignTilesContainer>
         <Link to="/App-Design">
@@ -18,10 +18,10 @@ export default function WebDesignTiles() {
             </AppDesignSquare>
         </Link>
         <Link to="/Graphic-Design">
-            <GraphicDesignSquare>
-                <h2>GRAPHIC DESIGN</h2>
+            <WebDesignSquare2>
+                <h2>WEB DESIGN</h2>
                 <p>VIEW PROJECTS<ArrowIcon/></p>
-            </GraphicDesignSquare>
+            </WebDesignSquare2>
         </Link>
     </DesignTilesContainer>
   )

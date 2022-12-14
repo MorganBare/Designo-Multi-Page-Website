@@ -6,7 +6,7 @@ import {
     WebDesignSquare2,
     GraphicDesignSquare,
     ArrowIcon
-} from './WebDesignTiles.styled'
+} from './DesignTiles.styled'
 
 export default function AppDesignTiles() {
   return (
