@@ -14,6 +14,7 @@ import HeroGraphicDesign from "./heros/design/HeroGraphicDesign";
 import AppDesignCards from "./cards/AppDesignCards";
 import WebDesignCards from "./cards/WebDesignCards";
 import GraphicDesignCards from "./cards/GraphicDesignCards";
+import HeroAbout from "./heros/about/HeroAbout";
 
 export { 
     Navigation, 
@@ -31,5 +32,6 @@ export {
     HeroGraphicDesign,
     AppDesignCards,
     WebDesignCards,
-    GraphicDesignCards };
+    GraphicDesignCards,
+    HeroAbout };
 
