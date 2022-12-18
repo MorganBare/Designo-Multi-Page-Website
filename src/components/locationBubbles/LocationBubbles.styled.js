@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 import SVGbg from '../../assets/shared/desktop/bg-pattern-small-circle.svg'
 
+import { NavLink } from 'react-router-dom';
+
 import {ReactComponent as Canada} from '../../assets/shared/desktop/illustration-canada.svg'
 import {ReactComponent as Australia} from '../../assets/shared/desktop/illustration-australia.svg'
 import {ReactComponent as UK} from '../../assets/shared/desktop/illustration-united-kingdom.svg'
@@ -28,8 +30,8 @@ export const LocationSVGContainer = styled.div`
     background: url(${SVGbg});
 `;
 
-export const CanadaSVG = styled(Canada)`
-
-`;
+export const CanadaSVG = styled(Canada)``;
 export const AustraliaSVG = styled(Australia)``;
 export const UKSVG = styled(UK)``;
+
+export const Link = styled(NavLink)``;

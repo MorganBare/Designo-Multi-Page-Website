@@ -6,7 +6,8 @@ import {
     LocationSVGContainer,
     CanadaSVG,
     AustraliaSVG,
-    UKSVG
+    UKSVG,
+    Link
  } from './LocationBubbles.styled'
 
  import { LightButton } from '../../styles/Buttons.styled'
@@ -20,7 +21,7 @@ export default function LocationBubbles() {
                 <CanadaSVG/>
             </LocationSVGContainer>
             <h3>CANADA</h3>
-            <LightButton>SEE LOCATION</LightButton>
+            <Link to='/locations'><LightButton>SEE LOCATION</LightButton></Link>
         </SingleLocation>
 
         <SingleLocation>
@@ -28,7 +29,7 @@ export default function LocationBubbles() {
                 <AustraliaSVG/>
             </LocationSVGContainer>
             <h3>AUSTRALIA</h3>
-            <LightButton>SEE LOCATION</LightButton>
+            <Link to='/locations'><LightButton>SEE LOCATION</LightButton></Link>
         </SingleLocation>
 
         <SingleLocation>
@@ -36,7 +37,7 @@ export default function LocationBubbles() {
                 <UKSVG/>
             </LocationSVGContainer>
             <h3>UNITED KINGDOM</h3>
-            <LightButton>SEE LOCATION</LightButton>
+            <Link to='/locations'><LightButton>SEE LOCATION</LightButton></Link>
         </SingleLocation>
 
     </LocationBubblesContainer>
