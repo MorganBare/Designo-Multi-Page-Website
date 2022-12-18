@@ -1,16 +1,16 @@
 import React from 'react'
 
 import { 
-    CardContainer,
+    CardContainerReal,
     ImgDivReal,
-    CardContent } from './AboutCard.styled'
+    CardContentReal } from './AboutCard.styled'
 
 export default function RealCard() {
   return (
-    <CardContainer>
+    <CardContainerReal>
         <ImgDivReal>
         </ImgDivReal>
-        <CardContent>
+        <CardContentReal>
             <h1>The real deal</h1>
             <p>As strategic partners in our clients’ businesses, we 
                 are ready to take on any challenge as our own.
@@ -23,7 +23,7 @@ export default function RealCard() {
                 ways. By combining business and marketing strategies, 
                 we inspire audiences to take action and drive real results.
             </p>
-        </CardContent>
-    </CardContainer>
+        </CardContentReal>
+    </CardContainerReal>
   )
 }
