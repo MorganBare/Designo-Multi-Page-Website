@@ -12,6 +12,19 @@ import {ReactComponent as UK} from '../../assets/shared/desktop/illustration-uni
 export const LocationBubblesContainer = styled.div`
     text-align: center;
     margin: 4rem 0;
+
+    @media screen and (min-width:1024px) {
+        width: 800px;
+        display: flex;
+        margin: 4rem auto;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width:1444px) {
+        width: 1110px;
+        justify-content: space-evenly;
+        gap: 5rem;
+    }
 `;
 
 export const SingleLocation = styled.div`
