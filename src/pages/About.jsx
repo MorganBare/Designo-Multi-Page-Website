@@ -1,12 +1,13 @@
 import React from 'react'
 
-import { HeroAbout, RealCard, TalentCard } from '../components'
+import { HeroAbout, LocationBubbles, RealCard, TalentCard } from '../components'
 
 export default function About() {
   return (
     <>
       <HeroAbout/>
       <TalentCard/>
+      <LocationBubbles/>
       <RealCard/>
     </>
   )

@@ -17,6 +17,7 @@ import GraphicDesignCards from "./cards/GraphicDesignCards";
 import HeroAbout from "./heros/about/HeroAbout";
 import TalentCard from "./aboutCards/TalentCard";
 import RealCard from "./aboutCards/RealCard";
+import LocationBubbles from "./locationBubbles/LocationBubbles";
 
 export { 
     Navigation, 
@@ -37,5 +38,6 @@ export {
     GraphicDesignCards,
     HeroAbout,
     TalentCard,
-    RealCard };
+    RealCard,
+    LocationBubbles };
 
