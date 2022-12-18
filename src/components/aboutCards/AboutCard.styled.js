@@ -15,16 +15,18 @@ export const CardContainer = styled.div`
 `;
 
 export const ImgDiv = styled.div`
-    width: 100%;
     height: 320px;
+    width: 100%;
 `;
 
 export const ImgDivTalent = styled(ImgDiv)`
     background: no-repeat url(${MobileTalent});
+    background-size: cover;
 `;
 
 export const ImgDivReal = styled(ImgDiv)`
     background: no-repeat url(${MobileReal});
+    background-size: cover;
 `;
 
 export const CardContent = styled.div`
