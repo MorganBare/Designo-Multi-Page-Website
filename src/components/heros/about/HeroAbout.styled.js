@@ -17,6 +17,13 @@ export const HeroAboutContainer = styled.div`
         margin: auto;
     }
 
+    @media screen and (min-width:1340px) {
+        width: 1111px;
+        display: flex;
+        flex-direction: row-reverse;
+        height: 480px;
+    }
+
 `;
 
 export const AboutImg = styled.div`
@@ -31,6 +38,14 @@ export const AboutImg = styled.div`
         background-size: cover;
         border-radius: 15px 15px 0 0;
     }
+
+    @media screen and (min-width:1440px) {
+        width: 476px;
+        border-radius: 0 15px 15px 0;
+        height: auto;
+
+        background: no-repeat url(${DesktopHero});
+    }
 `;
 
 export const AboutContent = styled.div`
@@ -42,7 +57,6 @@ export const AboutContent = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 
     h1 {
         font-weight: ${({theme}) => theme.fontWeight.medium};
@@ -62,6 +76,10 @@ export const AboutContent = styled.div`
         @media screen and (min-width:760px) {
             max-width: 573px;
         }
+
+        @media screen and (min-width:1333px) {
+            max-width: 458px;
+        }
     }
 
     background: no-repeat url(${MobileSVG});
@@ -76,6 +94,17 @@ export const AboutContent = styled.div`
         background-color: ${({theme}) => theme.colors.peach};
         background-position-x: -115px;
         background-position-y: -437px;
+    }
+
+    @media screen and (min-width:1440px) {
+        width: 635px;
+        text-align: left;
+        height: auto;
+        border-radius: 15px 0 0 15px;
+        padding-inline: 5.5rem;
+
+        background-position-x: 0px;
+        background-position-y: -160px;
     }
 
 `;
