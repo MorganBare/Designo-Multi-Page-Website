@@ -57,6 +57,7 @@ export const AboutContent = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     h1 {
         font-weight: ${({theme}) => theme.fontWeight.medium};
@@ -84,8 +85,8 @@ export const AboutContent = styled.div`
 
     background: no-repeat url(${MobileSVG});
     background-color: ${({theme}) => theme.colors.peach};
-    background-position-x: -215px;
-    background-position-y: -140px;
+    background-position-x: -505px;
+    background-position-y: -142px;
 
     @media screen and (min-width:760px) {
         border-radius: 0 0 15px 15px;
@@ -102,6 +103,7 @@ export const AboutContent = styled.div`
         height: auto;
         border-radius: 15px 0 0 15px;
         padding-inline: 5.5rem;
+        align-items: baseline;
 
         background-position-x: 0px;
         background-position-y: -160px;

@@ -15,6 +15,8 @@ import AppDesignCards from "./cards/AppDesignCards";
 import WebDesignCards from "./cards/WebDesignCards";
 import GraphicDesignCards from "./cards/GraphicDesignCards";
 import HeroAbout from "./heros/about/HeroAbout";
+import TalentCard from "./aboutCards/TalentCard";
+import RealCard from "./aboutCards/RealCard";
 
 export { 
     Navigation, 
@@ -33,5 +35,7 @@ export {
     AppDesignCards,
     WebDesignCards,
     GraphicDesignCards,
-    HeroAbout };
+    HeroAbout,
+    TalentCard,
+    RealCard };
 
