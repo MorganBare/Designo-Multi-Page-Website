@@ -13,11 +13,11 @@ export const HeroAboutContainer = styled.div`
 `;
 
 export const AboutImg = styled.div`
+    display: block;
     height: 320px;
-    width: 375px;
+    width: 100%;
     background: no-repeat url(${MobileHero});
-    background-size: contain;
-    margin: 0 auto;
+    background-size: cover;
 `;
 
 export const AboutContent = styled.div`
