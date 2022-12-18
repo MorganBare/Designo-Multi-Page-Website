@@ -9,8 +9,6 @@ import DesktopSVG from '../../../assets/about/desktop/bg-pattern-hero-about-desk
 
 export const HeroAboutContainer = styled.div`
 
-    margin-bottom: 20rem;
-
     @media screen and (min-width:760px) {
         width: 689px;
         border-radius: 15px;
@@ -63,7 +61,7 @@ export const AboutContent = styled.div`
         font-weight: ${({theme}) => theme.fontWeight.medium};
         line-height: ${({theme}) => theme.lineHeight.medium};
         padding-bottom: 1rem;
-        font-size: ${({theme}) => theme.fontWeight.h1};
+        font-size: ${({theme}) => theme.fontSize.h1};
 
         @media screen and (min-width:760px) {
             font-size: 48px;
