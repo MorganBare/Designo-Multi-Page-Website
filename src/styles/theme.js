@@ -21,7 +21,7 @@ export const theme = {
 
     fontSize: {
         h1: 'clamp(2em, 1.8em + 1vw, 3em)',
-        h2: 'clamp(1.75rem, 1.6rem + 0.75vw, 2.5rem)',
+        h2: 'clamp(2rem, 1.6rem + 0.75vw, 2.5rem)',
         h3: '20px',
         body: 'clamp(0.9375rem, 0.925rem + 0.0625vw, 1rem)',
         button: '15px'

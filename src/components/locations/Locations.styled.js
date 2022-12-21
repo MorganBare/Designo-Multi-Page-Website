@@ -11,11 +11,20 @@ import DesktopUk from  '../../assets/locations/desktop/image-map-united-kingdom.
 
 import Mobilebg from '../../assets/shared/desktop/bg-pattern-three-circles.svg'
 
-export const LocationsCotainer = styled.div``;
+export const LocationsCotainer = styled.div`
+    @media screen and (min-width:768px) {
+       margin-bottom: -100px;
+    }
+`;
 
 export const SingleLocation = styled.div`
     text-align: center;
     margin-bottom: 2rem;
+
+    @media screen and (min-width:600px) {
+        width: 550px;
+        margin: 2rem auto;
+    }
 
     @media screen and (min-width:768px) {
         width: 689px;
@@ -26,6 +35,11 @@ export const SingleLocation = styled.div`
 
 export const Map = styled.div`
     height: 320px;
+
+    @media screen and (min-width:600px) {
+        border-radius: 15px;
+        margin-bottom: 1rem;
+    }
 
     @media screen and (min-width:768px) {
        height: 326px;
@@ -70,9 +84,12 @@ export const Address = styled.div`
         font-weight: ${({theme}) => theme.fontWeight.medium};
     }
 
+    @media screen and (min-width:600px) {
+        border-radius: 15px;
+    }
+
     @media screen and (min-width:768px) {
        height: 326px;
-       border-radius: 15px;
        align-items: baseline;
        padding-left: 4rem;
        background-position-y: -255px;
@@ -95,7 +112,7 @@ export const AddressContent = styled.div`
 
     @media screen and (min-width:768px) {
        display: flex;
-       gap: 7rem;
+       gap: 8rem;
 
        div {
         padding-top: 1rem;
