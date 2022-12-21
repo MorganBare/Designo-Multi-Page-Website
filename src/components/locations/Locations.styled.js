@@ -16,16 +16,29 @@ export const LocationsCotainer = styled.div``;
 export const SingleLocation = styled.div`
     text-align: center;
     margin-bottom: 2rem;
+
+    @media screen and (min-width:768px) {
+        width: 689px;
+        margin: 0 auto 6rem auto;
+        text-align: left;
+    }
 `;
 
 export const Map = styled.div`
     height: 320px;
+
+    @media screen and (min-width:768px) {
+       height: 326px;
+       border-radius: 15px;
+       margin-bottom: 2rem;
+    }
 `;
 
 export const MapAU = styled(Map)`
     background: no-repeat url(${TabletAU});
     background-position: 75% 0%;
     background-size: cover;
+
 `;
 
 export const MapCA = styled(Map)`
@@ -56,6 +69,19 @@ export const Address = styled.div`
         font-size: ${({theme}) => theme.fontSize.h2};
         font-weight: ${({theme}) => theme.fontWeight.medium};
     }
+
+    @media screen and (min-width:768px) {
+       height: 326px;
+       border-radius: 15px;
+       align-items: baseline;
+       padding-left: 4rem;
+       background-position-y: -255px;
+       background-position-x: -5px;
+
+       h2 {
+        font-size: 40px;
+        }
+    }
 `;
 
 export const AddressContent = styled.div`
@@ -65,5 +91,18 @@ export const AddressContent = styled.div`
         }
 
         padding-top: 1.5rem;
+    }
+
+    @media screen and (min-width:768px) {
+       display: flex;
+       gap: 7rem;
+
+       div {
+        padding-top: 1rem;
+
+        p{
+            padding-bottom: .3rem;
+        }
+       }
     }
 `;

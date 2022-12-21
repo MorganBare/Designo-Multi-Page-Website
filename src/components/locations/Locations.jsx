@@ -64,8 +64,8 @@ export default function Location() {
                 <AddressContent>
                     <div>
                         <p>Designo UK Office</p>
-                        <p>13  Colorado Way</p>
-                        <p>Rhyd-y-fro SA8 9GA</p>
+                        <p>13  Colorado Way </p>
+                        <p>Rhyd-y-fro SA8 9GA </p>
                     </div>
                     <div>
                         <p>Contact</p>
