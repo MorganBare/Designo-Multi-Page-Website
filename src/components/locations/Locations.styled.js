@@ -15,6 +15,10 @@ export const LocationsCotainer = styled.div`
     @media screen and (min-width:768px) {
        margin-bottom: -100px;
     }
+
+    @media screen and (min-width:1440px) {
+        margin-bottom: 0;
+    }
 `;
 
 export const SingleLocation = styled.div`
@@ -31,6 +35,18 @@ export const SingleLocation = styled.div`
         margin: 0 auto 6rem auto;
         text-align: left;
     }
+
+    @media screen and (min-width:1440px) {
+        width: 1110px;
+        display: flex;
+        gap: 2rem;
+        flex-direction: row-reverse;
+        margin-bottom: 1rem;
+    }
+`;
+
+export const Australia = styled(SingleLocation)`
+    flex-direction: row;
 `;
 
 export const Map = styled.div`
@@ -46,6 +62,10 @@ export const Map = styled.div`
        border-radius: 15px;
        margin-bottom: 2rem;
     }
+
+    @media screen and (min-width:1440px) {
+        width: 350px;
+    }
 `;
 
 export const MapAU = styled(Map)`
@@ -53,12 +73,19 @@ export const MapAU = styled(Map)`
     background-position: 75% 0%;
     background-size: cover;
 
+    @media screen and (min-width:1440px) {
+        background-position: 65% 0%;
+    }
 `;
 
 export const MapCA = styled(Map)`
     background: no-repeat url(${TabletCA});
     background-position: right bottom;
     background-size: cover;
+
+    @media screen and (min-width:1440px) {
+        background-position: 90% 0%;
+    }
 `;
 
 export const MapUK = styled(Map)`
@@ -98,6 +125,10 @@ export const Address = styled.div`
        h2 {
         font-size: 40px;
         }
+    }
+
+    @media screen and (min-width:1440px) {
+        width: 730px;
     }
 `;
 

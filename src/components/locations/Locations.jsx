@@ -7,7 +7,8 @@ import {
     MapCA,
     MapUK,
     Address,
-    AddressContent } from './Locations.styled'
+    AddressContent,
+    Australia } from './Locations.styled'
 
 export default function Location() {
   return (
@@ -34,7 +35,7 @@ export default function Location() {
             </Address>
         </SingleLocation>
 
-        <SingleLocation>
+        <Australia>
             <MapAU>
 
             </MapAU>
@@ -53,7 +54,7 @@ export default function Location() {
                     </div>
                 </AddressContent>
             </Address>
-        </SingleLocation>
+        </Australia>
 
         <SingleLocation>
             <MapUK>
@@ -64,8 +65,8 @@ export default function Location() {
                 <AddressContent>
                     <div>
                         <p>Designo UK Office</p>
-                        <p>13  Colorado Way </p>
-                        <p>Rhyd-y-fro SA8 9GA </p>
+                        <p>13  Colorado Way</p>
+                        <p>Rhyd-y-fro SA8 9GA</p>
                     </div>
                     <div>
                         <p>Contact</p>
