@@ -21,18 +21,21 @@ export const Map = styled.div`
 `;
 
 export const MapAU = styled(Map)`
-    background: url(${TabletAU});
-    background-position: top right;
+    background: no-repeat url(${TabletAU});
+    background-position: 75% 0%;
+    background-size: cover;
 `;
 
 export const MapCA = styled(Map)`
-    background: url(${TabletCA});
-    background-position: right;
+    background: no-repeat url(${TabletCA});
+    background-position: right bottom;
+    background-size: cover;
 `;
 
 export const MapUK = styled(Map)`
-    background: url(${TabletUk});
-    background-position: right;
+    background: no-repeat url(${TabletUk});
+    background-position: 70% 0%;
+    background-size: cover;
 `;
 
 export const Address = styled.div``;
