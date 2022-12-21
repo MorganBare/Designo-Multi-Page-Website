@@ -1,7 +1,5 @@
 import React from 'react'
 
-import Leaf from '../../assets/shared/desktop/bg-pattern-leaf.svg'
-
 import { 
     CardContainerReal,
     ImgDivReal,
