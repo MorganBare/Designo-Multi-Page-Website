@@ -5,7 +5,7 @@ import {
     DesignCard,
     DesignCardContent,
     DesignCardImg,
-    LeafImgWeb
+    LeafImgApp
 } from './Cards.styled'
 
 import Leaf from '../../assets/shared/desktop/bg-pattern-leaf.svg'
@@ -19,7 +19,7 @@ import Transfer from '../../assets/web-design/desktop/image-transfer.jpg'
 export default function WebDesignCards() {
   return (
     <DesignCardContainer>
-        <LeafImgWeb src={Leaf}/>
+        <LeafImgApp src={Leaf}/>
         <DesignCard>
             <DesignCardImg src={Express}/>
             <DesignCardContent>

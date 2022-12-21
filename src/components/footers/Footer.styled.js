@@ -266,6 +266,7 @@ export const SocialMediaContainer = styled.div`
     width: 184px;
     justify-content: space-between;
     padding-top: 1rem;
+    margin: 0 auto;
     @media only screen and (min-width: 767px) {
         flex-direction: row;
         padding-top: 0;

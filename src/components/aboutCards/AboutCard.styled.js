@@ -12,6 +12,7 @@ import DesktopReal from '../../assets/about/desktop/image-real-deal.jpg'
 
 export const CardContainer = styled.div`
     text-align: center;
+    position: relative;
 
     @media screen and (min-width:760px) {
         width: 689px;
@@ -19,7 +20,7 @@ export const CardContainer = styled.div`
         margin: 6rem auto 4rem auto;
     }
 
-    @media screen and (min-width:1444px) {
+    @media screen and (min-width:1440px) {
         width: 1111px;
         display: flex;
         height: 640px;
@@ -29,7 +30,7 @@ export const CardContainer = styled.div`
 `;
 
 export const CardContainerReal = styled(CardContainer)`
-    @media screen and (min-width:1444px) {
+    @media screen and (min-width:1440px) {
         flex-direction: row-reverse;
     }
 `;
@@ -38,7 +39,7 @@ export const ImgDiv = styled.div`
     height: 320px;
     width: 100%;
 
-    @media screen and (min-width:1444px) {
+    @media screen and (min-width:1440px) {
         height: 640px;
         width: 476px;
     }
@@ -54,7 +55,7 @@ export const ImgDivTalent = styled(ImgDiv)`
         border-radius: 15px 15px 0 0;
     }
 
-    @media screen and (min-width:1444px) {
+    @media screen and (min-width:1440px) {
         background: no-repeat url(${DesktopTalent});
         border-radius: 15px 0 0 15px;
         background-size: cover;
@@ -71,7 +72,7 @@ export const ImgDivReal = styled(ImgDiv)`
         border-radius: 15px 15px 0 0;
     }
 
-    @media screen and (min-width:1444px) {
+    @media screen and (min-width:1440px) {
         background: no-repeat url(${DesktopReal});
         border-radius: 0 15px 15px 0;
         background-size: cover;
@@ -96,7 +97,7 @@ export const CardContent = styled.div`
         background-position-y:-208px;
     }
 
-    @media screen and (min-width:1444px) {
+    @media screen and (min-width:1440px) {
         height: 100%;
         border-radius: 0 15px 15px 0;
         width: 635px;
@@ -119,7 +120,7 @@ export const CardContent = styled.div`
         font-size: 48px;
         }
 
-        @media screen and (min-width:1444px) {
+        @media screen and (min-width:1440px) {
             padding-bottom: 2rem;
         }
     }
@@ -133,7 +134,7 @@ export const CardContent = styled.div`
             width: 572px;
         }
 
-        @media screen and (min-width:1444px) {
+        @media screen and (min-width:1440px) {
             width: 445px;
         }
 
@@ -144,9 +145,21 @@ export const CardContent = styled.div`
 `;
 
 export const CardContentReal = styled(CardContent)`
-    @media screen and (min-width:1444px) {
+    @media screen and (min-width:1440px) {
         border-radius: 15px 0 0 15px;
         background-position-x:0px;
         background-position-y:55px;
     }
+`;
+
+export const LeafImg = styled.img`
+    display: none;
+
+    @media screen and (min-width:1440px) {
+            display: block;
+            z-index: -1;
+            position: absolute;
+            right: 32%;
+            bottom: 68%;
+        }
 `;

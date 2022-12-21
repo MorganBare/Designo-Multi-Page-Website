@@ -1,13 +1,17 @@
 import React from 'react'
 
+import Leaf from '../../assets/shared/desktop/bg-pattern-leaf.svg'
+
 import { 
     CardContainer,
     ImgDivTalent,
-    CardContent } from './AboutCard.styled'
+    CardContent,
+    LeafImg } from './AboutCard.styled'
 
 export default function TalentCard() {
   return (
     <CardContainer>
+        <LeafImg src={Leaf}/>
         <ImgDivTalent>
         </ImgDivTalent>
         <CardContent>
