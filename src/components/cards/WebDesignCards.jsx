@@ -4,9 +4,11 @@ import {
     DesignCardContainer,
     DesignCard,
     DesignCardContent,
-    DesignCardImg
+    DesignCardImg,
+    LeafImgWeb
 } from './Cards.styled'
 
+import Leaf from '../../assets/shared/desktop/bg-pattern-leaf.svg'
 import Blogr from '../../assets/web-design/desktop/image-blogr.jpg'
 import Builder from '../../assets/web-design/desktop/image-builder.jpg'
 import Camp from '../../assets/web-design/desktop/image-camp.jpg'
@@ -17,7 +19,7 @@ import Transfer from '../../assets/web-design/desktop/image-transfer.jpg'
 export default function WebDesignCards() {
   return (
     <DesignCardContainer>
-
+        <LeafImgWeb src={Leaf}/>
         <DesignCard>
             <DesignCardImg src={Express}/>
             <DesignCardContent>

@@ -74,3 +74,14 @@ export const DesignCardImg = styled.img`
     }
 `;
 
+export const LeafImgWeb = styled.img`
+    display: none;
+
+    @media screen and (min-width:1440px) {
+            display: block;
+            z-index: -1;
+            position: absolute;
+            right: 32%;
+            bottom: 68%;
+        }
+`;
