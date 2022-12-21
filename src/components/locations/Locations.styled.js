@@ -1,13 +1,10 @@
 import styled from "styled-components";
 
 import TabletAU from '../../assets/locations/tablet/image-map-australia.png'
-import DesktopAU from '../../assets/locations/desktop/image-map-australia.png'
 
 import TabletCA from '../../assets/locations/tablet/image-map-canada.png'
-import DesktopCA from '../../assets/locations/desktop/image-map-canada.png'
 
 import TabletUk from  '../../assets/locations/tablet/image-map-uk.png'
-import DesktopUk from  '../../assets/locations/desktop/image-map-united-kingdom.png'
 
 import Mobilebg from '../../assets/shared/desktop/bg-pattern-three-circles.svg'
 
