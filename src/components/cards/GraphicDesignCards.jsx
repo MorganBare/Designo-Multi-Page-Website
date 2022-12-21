@@ -4,9 +4,11 @@ import {
     DesignCardContainer,
     DesignCard,
     DesignCardContent,
-    DesignCardImg
+    DesignCardImg,
+    LeafImgGraphic
 } from './Cards.styled'
 
+import Leaf from '../../assets/shared/desktop/bg-pattern-leaf.svg'
 import Boxed from '../../assets/graphic-design/desktop/image-boxed-water.jpg'
 import Change from '../../assets/graphic-design/desktop/image-change.jpg'
 import Science from '../../assets/graphic-design/desktop/image-science.jpg'
@@ -16,7 +18,7 @@ import Science from '../../assets/graphic-design/desktop/image-science.jpg'
 export default function GraphicDesignCards() {
   return (
     <DesignCardContainer>
-
+        <LeafImgGraphic src={Leaf}/>
         <DesignCard>
             <DesignCardImg src={Change}/>
             <DesignCardContent>

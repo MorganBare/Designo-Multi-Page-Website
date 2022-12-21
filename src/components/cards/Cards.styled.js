@@ -85,3 +85,27 @@ export const LeafImgWeb = styled.img`
             bottom: 68%;
         }
 `;
+
+export const LeafImgApp = styled.img`
+    display: none;
+
+    @media screen and (min-width:1440px) {
+            display: block;
+            z-index: -1;
+            position: absolute;
+            right: 32%;
+            bottom: 68.5%;
+        }
+`;
+
+export const LeafImgGraphic = styled.img`
+    display: none;
+
+    @media screen and (min-width:1440px) {
+            display: block;
+            z-index: -1;
+            position: absolute;
+            right: 32%;
+            bottom: 61.4%;
+        }
+`;

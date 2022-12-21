@@ -4,9 +4,11 @@ import {
     DesignCardContainer,
     DesignCard,
     DesignCardContent,
-    DesignCardImg
+    DesignCardImg,
+    LeafImgApp
 } from './Cards.styled'
 
+import Leaf from '../../assets/shared/desktop/bg-pattern-leaf.svg'
 import Airfilter from '../../assets/app-design/desktop/image-airfilter.jpg'
 import Eyecam from '../../assets/app-design/desktop/image-eyecam.jpg'
 import Faceit from '../../assets/app-design/desktop/image-faceit.jpg'
@@ -16,7 +18,7 @@ import Todo from '../../assets/app-design/desktop/image-todo.jpg'
 export default function AppDesignCards() {
   return (
     <DesignCardContainer>
-
+        <LeafImgApp src={Leaf}/>
         <DesignCard>
             <DesignCardImg src={Airfilter}/>
             <DesignCardContent>
