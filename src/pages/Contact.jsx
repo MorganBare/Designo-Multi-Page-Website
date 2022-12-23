@@ -1,9 +1,12 @@
 import React from 'react'
 
-import LocationBubbles from '../components/locationBubbles/LocationBubbles'
+import { ContactForm, LocationBubbles } from '../components'
 
 export default function Contact() {
   return (
-    <LocationBubbles/>
+    <>
+      <ContactForm/>
+      <LocationBubbles/>
+    </>
   )
 }

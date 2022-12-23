@@ -19,6 +19,7 @@ import TalentCard from "./aboutCards/TalentCard";
 import RealCard from "./aboutCards/RealCard";
 import LocationBubbles from "./locationBubbles/LocationBubbles";
 import Location from "./locations/Locations";
+import ContactForm from "./Form/ContactForm";
 
 export { 
     Navigation, 
@@ -41,5 +42,6 @@ export {
     TalentCard,
     RealCard,
     LocationBubbles,
-    Location };
+    Location,
+    ContactForm };
 
