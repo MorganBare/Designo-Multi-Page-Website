@@ -21,8 +21,18 @@ export const ContactContainer = styled.div`
 
             background: no-repeat url(${DesktopSVG});
             background-color: ${({theme}) => theme.colors.peach};
-            background-position-x: -95px;
-            background-position-y: -90px;
+            background-position-x: -105px;
+            background-position-y: -89px;
+        }
+
+        @media screen and (min-width:1440px) {
+            width: 1111px;
+            height: 480px;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 5.6rem;
+            background-position-x: 0px;
+            background-position-y: -160px;
         }
 `;
 
@@ -33,6 +43,12 @@ export const ContactContent = styled.div`
         text-align: left;
     }
 
+    @media screen and (min-width:1440px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     h1{
         font-weight: ${({theme}) => theme.fontWeight.medium};
         font-size: ${({theme}) => theme.fontSize.h1};
@@ -41,6 +57,10 @@ export const ContactContent = styled.div`
 
         @media screen and (min-width:760px) {
             font-size: 48px;
+        }
+
+        @media screen and (min-width:1440px) {
+            padding-bottom: 2rem;
         }
     }
 
@@ -54,6 +74,10 @@ export const ContactContent = styled.div`
             margin: 0;
             max-width: 550px;
         }
+
+        @media screen and (min-width:760px) {
+            max-width: 460px;
+        }
     }
 `
 
@@ -62,8 +86,12 @@ export const ContactFormOuter = styled.form`
     text-align: center;
 
     @media screen and (min-width:760px) {
-            padding-top: .5rem;
-        }
+        padding-top: .5rem;
+    }
+
+    @media screen and (min-width:1440px) {
+        width: 380px;
+    }
 `;
 
 export const FormElementDiv = styled.div`
@@ -78,7 +106,12 @@ export const FormElementDiv = styled.div`
         &::placeholder{
             color: ${({theme}) => theme.colors.opac};
         }
+
+        @media screen and (min-width:1440px) {
+            padding: 1.7rem 0 .5rem 1rem;
+        }
     }
+
 
     label{
         border: 0;
@@ -111,4 +144,8 @@ export const SubmitButton = styled(DarkButton)`
     @media screen and (min-width:760px) {
         float: right;
     }
+
+    @media screen and (min-width:1440px) {
+            margin-top: 1rem;
+        }
 `;
