@@ -24,6 +24,9 @@ export const FooterContainer = styled.div`
 `;
 
 export const ContactFooterContainer = styled.div`
+    @media screen and (min-width: 1440px) {
+        padding-top: 5rem;
+    }
 `;
 
 export const GetInTouchContainer = styled.div`
