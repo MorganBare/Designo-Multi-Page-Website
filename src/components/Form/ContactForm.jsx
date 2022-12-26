@@ -4,7 +4,8 @@ import {
     ContactContainer,
     ContactContent,
     ContactFormOuter,
-    FormElementDiv
+    FormElementDiv,
+    SubmitButton
 } from './ContactForm.styled'
 
 export default function ContactForm() {
@@ -24,20 +25,23 @@ export default function ContactForm() {
                 <input
                 id='name'
                 type='text'
+                placeholder='Name'
                 />
             </FormElementDiv>
             <FormElementDiv>
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">Email Address</label>
                 <input
                 id='email'
                 type='email'
+                placeholder='Email Address'
                 />
             </FormElementDiv>
             <FormElementDiv>
-                <label htmlFor='phone'>phone</label>
+                <label htmlFor='phone'>Phone</label>
                 <input
                 id='phone'
                 type='number'
+                placeholder='Phone'
                 />
             </FormElementDiv>
             <FormElementDiv>
@@ -46,8 +50,10 @@ export default function ContactForm() {
                 id='message'
                 rows={5}
                 cols={5}
+                placeholder='Your Message'
                 />
             </FormElementDiv>
+            <SubmitButton type='submit'>Submit</SubmitButton>
         </ContactFormOuter>
     </ContactContainer>
   )
