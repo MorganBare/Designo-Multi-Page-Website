@@ -24,6 +24,7 @@ import lightLogo  from "../../assets/shared/desktop/logo-light.png"
 import { DarkButton } from "../../styles/Buttons.styled.js"
 
 export default function Footer() {
+
   return (
     <FooterContainer>
 
