@@ -41,7 +41,7 @@ export default function ContactForm() {
                 />
             </FormElementDiv>
             <FormElementDiv>
-                <label htmlFor='message'>message</label>
+                <label htmlFor='message'>Your Message</label>
                 <textarea
                 id='message'
                 rows={5}
