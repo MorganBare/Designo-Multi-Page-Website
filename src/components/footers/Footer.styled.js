@@ -339,3 +339,23 @@ export const StyledInstagramIcon = styled(instagram)`
         fill: ${({theme}) => theme.colors.lightPeach}
     }
 `;
+
+export const LeafImg = styled.img`
+    display: none;
+
+    @media screen and (min-width:1440px) {
+            display: block;
+            z-index: -1;
+            position: absolute;
+            right: 0%;
+            bottom: 11%;
+        }
+
+    @media screen and (min-width:1700px) {
+        display: block;
+        z-index: -1;
+        position: absolute;
+        right: 10%;
+        bottom: 11%;
+    }
+`;

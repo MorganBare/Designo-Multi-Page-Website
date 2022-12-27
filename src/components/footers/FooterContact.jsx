@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Leaf from '../../assets/shared/desktop/bg-pattern-leaf.svg'
+
 import { ContactFooterContainer, 
         ContactPageInfoContainer, 
         ContactNav, 
@@ -14,13 +16,16 @@ import { ContactFooterContainer,
         StyledPinterestIcon,
         StyledInstagramIcon,
         FlexDiv,
-        SubP } from './Footer.styled'
+        SubP,
+        LeafImg } from './Footer.styled'
 
 import lightLogo from "../../assets/shared/desktop/logo-light.png"
 
 
 export default function Footer2() {
   return (
+    <>
+    <LeafImg src={Leaf}/>
     <ContactFooterContainer>
 
       <ContactPageInfoContainer>
@@ -60,5 +65,6 @@ export default function Footer2() {
       </ContactPageInfoContainer>
 
     </ContactFooterContainer>
+    </>
   )
 }
