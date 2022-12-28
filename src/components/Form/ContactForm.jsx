@@ -22,8 +22,6 @@ const INITIAL_STATE = {
 export default function ContactForm() {
     const [form, setForm] = React.useState(INITIAL_STATE);
     const [errors, setErrors] = React.useState({});
-    const [toggleButton, setToggleButton] = React.useState(false);
-
 
     const handleChange = (event) => {
         setForm({
@@ -50,10 +48,12 @@ export default function ContactForm() {
         checkForEmpty();
     },[form])
 
-
     const handleSubmit = (event) => {
         event.preventDefault();
-        setForm(INITIAL_STATE);
+        if (form.name && form.email && form.phone && form.message){
+            console.log('Submitted');
+            setForm(INITIAL_STATE);
+        }
     };
 
   return (
@@ -108,7 +108,7 @@ export default function ContactForm() {
                 onChange={handleChange}
                 />
             </FormElementDiv>
-            <SubmitButton type='submit' disabled={toggleButton}>Submit</SubmitButton>
+            <SubmitButton type='submit'>Submit</SubmitButton>
         </ContactFormOuter>
     </ContactContainer>
   )

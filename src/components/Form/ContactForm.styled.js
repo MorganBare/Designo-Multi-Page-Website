@@ -151,6 +151,7 @@ export const FormElementDiv = styled.div`
         height: 125px;
         padding: 2rem 1rem;
         color: ${({theme}) => theme.colors.white};
+        resize: none;
 
         &::placeholder{
             color: ${({theme}) => theme.colors.opac};
