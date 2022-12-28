@@ -96,22 +96,41 @@ export const ContactFormOuter = styled.form`
 
 export const FormElementDiv = styled.div`
 
+    position: relative;
+
     input {
         background-color: inherit;
         border: none;
         border-bottom: white solid 1px;
         width: 100%;
         padding: 2rem 0 1rem 1rem;
+        color: ${({theme}) => theme.colors.white};
 
         &::placeholder{
             color: ${({theme}) => theme.colors.opac};
         }
 
+        &:focus{
+            outline: none;
+            border-bottom: white solid 3px;
+            color: ${({theme}) => theme.colors.white};
+        }
+
         @media screen and (min-width:1440px) {
             padding: 1.7rem 0 .5rem 1rem;
         }
+
     }
 
+    input[type='number']::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type="number"] {
+    -moz-appearance: textfield;
+    }
 
     label{
         border: 0;
@@ -131,9 +150,16 @@ export const FormElementDiv = styled.div`
         width: 100%;
         height: 125px;
         padding: 2rem 1rem;
+        color: ${({theme}) => theme.colors.white};
 
         &::placeholder{
             color: ${({theme}) => theme.colors.opac};
+        }
+
+        &:focus{
+            outline: none;
+            border-bottom: white solid 3px;
+            color: ${({theme}) => theme.colors.white};
         }
     }
 `;
@@ -148,4 +174,19 @@ export const SubmitButton = styled(DarkButton)`
     @media screen and (min-width:1440px) {
             margin-top: 1rem;
         }
+`;
+
+export const FormNameDiv = styled(FormElementDiv)`
+    &::before{
+        content: "Can't be empty!";
+        width: auto;
+        height: 20px;
+        position: absolute;
+        text-align: right;
+        font-size: 12px;
+        font-style: italic;
+        top: 30px;
+        right: 10px;
+        display: ${props => (props.isEmpty ? 'none' : 'block')};
+    }
 `;
