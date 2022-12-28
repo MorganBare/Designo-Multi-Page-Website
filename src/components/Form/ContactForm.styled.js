@@ -187,6 +187,21 @@ export const FormNameDiv = styled(FormElementDiv)`
         font-style: italic;
         top: 30px;
         right: 10px;
-        display: ${props => (props.isEmpty ? 'none' : 'block')};
+        display: ${props => (props.isEmpty ? 'block' : 'none')};
+    }
+`;
+
+export const FormPhoneDiv = styled(FormElementDiv)`
+    &::before{
+        content: "Can't be empty!";
+        width: auto;
+        height: 20px;
+        position: absolute;
+        text-align: right;
+        font-size: 12px;
+        font-style: italic;
+        top: 30px;
+        right: 10px;
+        display: ${props => (props.isEmpty ? 'block' : 'none')};
     }
 `;

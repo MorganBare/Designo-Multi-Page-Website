@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react';
 
 import { 
     ContactContainer,
@@ -6,7 +7,8 @@ import {
     ContactFormOuter,
     FormElementDiv,
     SubmitButton,
-    FormNameDiv
+    FormNameDiv,
+    FormPhoneDiv
 } from './ContactForm.styled' 
 
 const INITIAL_STATE = {
@@ -16,10 +18,11 @@ const INITIAL_STATE = {
     message:''
 }
 
+
 export default function ContactForm() {
     const [form, setForm] = React.useState(INITIAL_STATE);
     const [errors, setErrors] = React.useState({});
-    const [toggleButton, setToggleButton] = React.useState(false)
+    const [toggleButton, setToggleButton] = React.useState(false);
 
 
     const handleChange = (event) => {
@@ -30,22 +33,28 @@ export default function ContactForm() {
     }
 
     const checkForEmpty = () => {
-        Object.keys(form).forEach(value => {
-            if(value){
-                console.log('nope')
+        Object.keys(form).forEach(key => {
+            if (!form[key] && !errors[key]){
+                setErrors({...errors, [key]: true})
+            } else if (form[key] && errors[key]) {
+                setErrors(current => {
+                    const copy = {...current};
+                    delete copy[key];
+                    return copy;
+                })
             }
         })
     }
 
+    React.useEffect(() => {
+        checkForEmpty();
+    },[form])
 
-    console.log(errors)
+
     const handleSubmit = (event) => {
         event.preventDefault();
-        checkForEmpty();
         setForm(INITIAL_STATE);
     };
-
-console.log(errors)
 
   return (
     <ContactContainer>
@@ -58,7 +67,7 @@ console.log(errors)
                 drop us a line.</p>
         </ContactContent>
         <ContactFormOuter onSubmit={handleSubmit}>
-            <FormNameDiv isEmpty={form.name}>
+            <FormNameDiv isEmpty={errors.name}>
                 <label htmlFor="name">Name</label>
                 <input
                 id='name'
@@ -68,7 +77,7 @@ console.log(errors)
                 onChange={handleChange}
                 />
             </FormNameDiv>
-            <FormElementDiv>
+            <FormPhoneDiv isEmpty={errors.email}>
                 <label htmlFor="email">Email Address</label>
                 <input
                 id='email'
@@ -77,8 +86,8 @@ console.log(errors)
                 value={form.email}
                 onChange={handleChange}
                 />
-            </FormElementDiv>
-            <FormElementDiv>
+            </FormPhoneDiv>
+            <FormPhoneDiv isEmpty={errors.phone}>
                 <label htmlFor='phone'>Phone</label>
                 <input
                 id='phone'
@@ -87,8 +96,8 @@ console.log(errors)
                 value={form.phone}
                 onChange={handleChange}
                 />
-            </FormElementDiv>
-            <FormElementDiv>
+            </FormPhoneDiv>
+            <FormElementDiv isEmpty={errors.message}>
                 <label htmlFor='message'>Your Message</label>
                 <textarea
                 id='message'
