@@ -44,8 +44,9 @@ export default function ContactForm() {
         })
     }
 
-    React.useEffect(() => {
+    React.useEffect((form) => {
         checkForEmpty();
+        // eslint-disable-next-line
     },[form])
 
     const handleSubmit = (event) => {
