@@ -20,7 +20,7 @@ export default function MobileNavigation() {
           onClick={() => 
           setExtendMobileNav((curr) => !curr)}>{extendMobileNav ? <CloseIcon/> : <Hamburger/>}</OpenMobileNavBtn>
       </MobileNavDiv>
-      {extendMobileNav && <MobileNavLinks extendMobileNav={extendMobileNav}/>}
+      <MobileNavLinks extendMobileNav={extendMobileNav} setExtendMobileNav={setExtendMobileNav}/>
     </>
   )
 }

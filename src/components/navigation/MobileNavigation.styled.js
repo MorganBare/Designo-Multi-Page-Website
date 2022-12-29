@@ -23,14 +23,19 @@ margin-bottom: 2rem;
 
 export const MobileNavContainer = styled.nav`
 
-    max-height: ${extendMobileNav => console.log(extendMobileNav)};
+    height: ${props => (props.extendMobileNav ? 'auto' : 0)};
+    opacity: ${props => (props.extendMobileNav ? 1 : 0)};
     background-color: ${({theme}) => theme.colors.black};
     overflow: hidden;
-    transition: all 1s ease-out;
     width: 100%;
     z-index: 100;
     position: fixed;
-    
+    -webkit-transition:all .26s ease-in-out;
+    -moz-transition:all .26s ease-in-out;
+    -ms-transition:all .26s ease-in-out;
+    -o-transition:all .26s ease-in-out;
+    transition:all .26s ease-in-out;
+
     ul{
         padding: 1.5rem;
 
