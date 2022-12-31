@@ -12,10 +12,10 @@ import {
 } from './ContactForm.styled' 
 
 const INITIAL_STATE = {
-    name:'',
     email:'',
     phone:'',
-    message:''
+    message:'',
+    name:''
 }
 
 
@@ -30,7 +30,9 @@ export default function ContactForm() {
         })
     }
 
-    const checkForEmpty = () => {
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
         Object.keys(form).forEach(key => {
             if (!form[key] && !errors[key]){
                 setErrors({...errors, [key]: true})
@@ -42,20 +44,14 @@ export default function ContactForm() {
                 })
             }
         })
-    }
 
-    React.useEffect((form) => {
-        checkForEmpty();
-        // eslint-disable-next-line
-    },[form])
-
-    const handleSubmit = (event) => {
-        event.preventDefault();
         if (form.name && form.email && form.phone && form.message){
             console.log('Submitted');
             setForm(INITIAL_STATE);
         }
     };
+
+    console.log(errors)
 
   return (
     <ContactContainer>
