@@ -7,7 +7,8 @@ import {
     FormElementDiv,
     SubmitButton,
     FormNameDiv,
-    FormPhoneDiv
+    FormPhoneDiv,
+    FormTextDiv
 } from './ContactForm.styled' 
 
 const INITIAL_STATE = {
@@ -97,7 +98,7 @@ export default function ContactForm() {
                 onChange={handleChange}
                 />
             </FormPhoneDiv>
-            <FormElementDiv isEmpty={errors.message}>
+            <FormTextDiv isEmpty={errors.message}>
                 <label htmlFor='message'>Your Message</label>
                 <textarea
                 id='message'
@@ -107,7 +108,7 @@ export default function ContactForm() {
                 value={form.message}
                 onChange={handleChange}
                 />
-            </FormElementDiv>
+            </FormTextDiv>
             <SubmitButton type='submit'>Submit</SubmitButton>
         </ContactFormOuter>
     </ContactContainer>
