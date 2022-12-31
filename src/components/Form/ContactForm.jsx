@@ -4,7 +4,6 @@ import {
     ContactContainer,
     ContactContent,
     ContactFormOuter,
-    FormElementDiv,
     SubmitButton,
     FormNameDiv,
     FormPhoneDiv,

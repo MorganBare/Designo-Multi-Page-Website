@@ -132,6 +132,11 @@ export const FormElementDiv = styled.div`
     -moz-appearance: textfield;
     }
 
+    input:-webkit-autofill { 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: ${({theme}) => theme.colors.white} !important;
+    }   
+
     label{
         border: 0;
         clip: rect(0 0 0 0);
