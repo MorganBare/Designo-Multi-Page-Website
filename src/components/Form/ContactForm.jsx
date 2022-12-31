@@ -11,9 +11,9 @@ import {
 } from './ContactForm.styled' 
 
 const INITIAL_STATE = {
-    email:'',
-    phone:'',
     message:'',
+    phone:'',
+    email:'',
     name:''
 }
 
@@ -45,12 +45,9 @@ export default function ContactForm() {
         })
 
         if (form.name && form.email && form.phone && form.message){
-            console.log('Submitted');
             setForm(INITIAL_STATE);
         }
     };
-
-    console.log(errors)
 
   return (
     <ContactContainer>
