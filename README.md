@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![DesignoScreenshot](https://user-images.githubusercontent.com/36883730/210132895-ebf2e288-38b8-4966-9808-56069a5c32c2.png)
 
 ### Links
 
